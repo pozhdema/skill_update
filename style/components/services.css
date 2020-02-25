@@ -1,0 +1,65 @@
+section{
+    width: 80%;
+    height: 650px;
+    margin: 0 10%;
+}
+.services-name{
+    font: 51px PlayfairDisplaySC-Bold;
+    margin: 0.5% 0 auto 40.2%;
+    letter-spacing: -0.5px;
+    color: rgba(180,180,180,255);
+}
+.services{
+    display: flex;
+    flex-wrap: wrap;
+}
+.left-services{
+    justify-content: flex-start;
+    width: 32%;
+}
+.right-services{
+    justify-content: flex-end;
+    width: 68%;
+}
+.name-list{
+    color: rgba(182,155,103,255);
+    font-size: 46px;
+    margin-left: 7%;
+    margin-top: 10%;
+    letter-spacing: 0.5px;
+    border-bottom: 1px solid #ffffff;
+    padding-bottom: 3px;
+    text-decoration: overline;
+}
+.list{
+    list-style-type: none;
+    padding-left: 7%;
+}
+.list-item{
+    padding-bottom: 14%;
+}
+.list-item a{
+    text-decoration: none;
+    color: rgba(180,180,180,255);
+}
+.list-item a:hover{
+    color: rgba(182,155,103,255);
+}
+.services-text{
+    width: 48%;
+    font-size: 17px;
+    margin-top: 8.1%;
+    margin-left: 3%;
+    letter-spacing: -0.5px;
+    line-height: 20px;
+    text-align: justify;
+}
+.services-text span{
+    color: rgba(182,155,103,255);
+}
+.laptop{
+    width: 74%;
+    margin-left: 7.5%;
+    margin-top: 7%;
+    opacity: 50%;
+}

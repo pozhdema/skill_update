@@ -1,0 +1,8 @@
+body{
+    width: 100%;
+    min-width: 375px;
+    margin: 0;
+    background: #2C2C2C;
+    font: 24px Ubuntu-Light;
+    color: rgba(180,180,180,255);
+}
