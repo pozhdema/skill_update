@@ -1,5 +1,5 @@
 section{
-    width: 100%;
+    width: 80%;
     height: 650px;
 }
 .services-name{
@@ -24,7 +24,7 @@ section{
     width: 68%;
 }
 .name-list{
-    color: #b69b67;
+    color: rgba(182,155,103,1);
     font-size: 46px;
     letter-spacing: 0.5px;
     border-top: 1px solid #b69b67;
@@ -47,7 +47,7 @@ section{
 }
 .list-item a{
     text-decoration: none;
-    color: #b4b4b4;
+    color: rgba(180,180,180,1);
 }
 .list-item a:hover{
     color: #b69b67;
