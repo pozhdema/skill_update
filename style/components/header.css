@@ -14,8 +14,6 @@ h1{
     display: inline-block;
     margin-top: 4.9%;
     position: relative;
-    top: -292px;
-    left: -6%;
 }
 h1 span{
     font: 24px Ubuntu-Light;
@@ -25,10 +23,11 @@ h1 span{
     right: -74px;
 }
 .lamp{
-    width: 17.5%;
-    margin-top: 18%;
+    margin-top: 7%;
     opacity: 70%;
-    margin-left: -28%;
+}
+.lamp img {
+    width: 17.5%;
 }
 .caption{
     font-size: 49px;

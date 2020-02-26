@@ -2,20 +2,49 @@
 @import "components/header.css";
 @import "components/services.css";
 @import "components/fonts.css";
+
+/*min device 320px*/
+@media only screen and (max-width : 767px) {
+    h1 {
+        font-size: 25px;/*replace*/
+    }
+
+    h1 span {
+       /*fixed font size*/
+    }
+}
+
+@media only screen and (min-width : 768px) {
+    h1 {
+        font-size: 3vw;/*replace*/
+    }
+
+    h1 span {
+        font-size: 2vw;/*replace*/
+    }
+}
+
+@media only screen and (min-width : 1600px) {
+    h1 {
+        font-size: 47px;
+    }
+}
+
+/*replace the same for h2*/
+
+
 @media only screen and (max-width : 375px) {
     header{
         height: 440px;
     }
     h1{
-        top: 8px;
         font-size: 31px;
     }
-    h1 span{
+    h1 span {
         font-size: 20px;
     }
-    .lamp{
+    .lamp {
         width: 35%;
-        margin-left: 0;
     }
     .caption{
         font-size: 25px;
@@ -55,13 +84,10 @@
         height: 530px;
     }
     h1{
-        top: -156px;
         font-size: 39px;
-        left: -19%;
     }
-    .lamp {
+    .lamp img {
         width: 20%;
-        margin: 30% 0 10% -58%;
     }
     .services-name{
         margin-top: 15.5%;
@@ -98,13 +124,9 @@
     header{
         height: 525px;
     }
-    h1{
-        top: -180px;
-        left: -18%;
-    }
     .lamp{
         width: 25%;
-        margin: 25% 0 0 -62%;
+        margin-top: 25%;
     }
     .caption{
         text-align: center;
@@ -138,16 +160,9 @@
         margin-top: 17%;
     }
 }
-@media only screen and (min-width: 768px) and (max-width: 992px) {
-    header{
+@media only screen and (min-width: 768px) {
+    header {
         height: 500px;
-    }
-    h1{
-        top: -172px;
-        left: -17%;
-    }
-    .lamp{
-        margin-left: -53%;
     }
     .caption{
         text-align: center;
@@ -169,12 +184,7 @@
     header{
         height: 650px;
     }
-    h1{
-        top: -205px;
-        left: -13%;
-    }
-    .lamp{
-        margin-left: -43%;
+    .lamp {
         margin-top: 15%;
     }
     .services-text{
