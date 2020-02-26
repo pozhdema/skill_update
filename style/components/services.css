@@ -22,14 +22,19 @@ section{
     width: 68%;
 }
 .name-list{
-    color: rgba(182,155,103,255);
+    color: rgba(182,155,103,1);
     font-size: 46px;
-    margin-left: 5%;
-    margin-top: 10%;
     letter-spacing: 0.5px;
+    border-top: 1px solid rgba(182,155,103,1);
+    position: relative;
+    margin: 10% 26% 12% 5%;
+}
+.name-list .line{
     border-bottom: 1px solid #ffffff;
-    padding-bottom: 3px;
-    text-decoration: overline;
+    position: absolute;
+    bottom: -2px;
+    width: 135%;
+    right: -92px;
 }
 .list{
     list-style-type: none;
@@ -40,18 +45,18 @@ section{
 }
 .list-item a{
     text-decoration: none;
-    color: rgba(180,180,180,255);
+    color: rgba(180,180,180,1);
 }
 .list-item a:hover{
-    color: rgba(182,155,103,255);
+    color: rgba(182,155,103,1);
 }
 .services-text{
     width: 48%;
     font-size: 17px;
-    margin-top: 8.1%;
+    margin-top: 8.4%;
     margin-left: 1.6%;
-    letter-spacing: -0.5px;
-    line-height: 20px;
+    letter-spacing: -0.3px;
+    line-height: 19px;
     text-align: justify;
 }
 .services-text span{

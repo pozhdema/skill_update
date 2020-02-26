@@ -7,10 +7,11 @@
         height: 440px;
     }
     h1{
-        margin: 5% 0 0 0;
+        margin: 5% 0 0 12%;
+        font-size: 31px;
     }
-    .logo{
-        margin-left: 49.3%;
+    h1 span{
+        font-size: 20px;
     }
     .lamp{
         width: 35%;
@@ -40,6 +41,14 @@
     .right-services{
         width: 100%;
     }
+    .name-list {
+        font-size: 41px;
+        margin: 10% 10% 12% 5%;
+    }
+    .name-list .line{
+        width: 113%;
+        right: -34px;
+    }
     .list{
         text-align: center;
     }
@@ -53,13 +62,11 @@
 }
 @media only screen and (min-width: 375px) and (max-width: 576px) {
     header{
-        height: 550px;
+        height: 500px;
     }
     h1{
-        margin: 5% 0 0 15.9%;
-    }
-    .logo{
-        margin-left: 51.3%;
+        margin: 5% 0 0 9.9%;
+        font-size: 39px;
     }
     .lamp {
         width: 20%;
@@ -71,12 +78,12 @@
         margin-left: 28%;
     }
     .down{
-        margin-left: 45.5%;
+        margin-left: 50.5%;
         width: 6%;
         margin-top: 1%;
     }
     .services-name{
-        margin: 0.5% 0 auto 24.2%;
+        margin: 0.5% 0 auto 18.2%;
     }
     .services{
         flex-direction: column;
@@ -87,6 +94,13 @@
     }
     .right-services{
         width: 100%;
+    }
+    .name-list{
+        margin: 10% -26% 12% -2%;
+    }
+    .name-list .line{
+        right: -20px;
+        width: 108%;
     }
     .services-text{
         width: 100%;
@@ -101,10 +115,7 @@
         height: 525px;
     }
     h1{
-        margin: 5% 0 0 25.9%;
-    }
-    .logo{
-        margin-left: 52.3%;
+        margin: 5% 0 0 14.9%;
     }
     .caption{
         text-align: center;
@@ -115,6 +126,9 @@
     .down{
         margin-left: 46.5%;
     }
+    section{
+        height: 600px;
+    }
     .services-name{
         margin: 0.5% 0 auto 30.2%;
     }
@@ -123,6 +137,14 @@
     }
     .right-services{
         width: 50%;
+    }
+    .name-list{
+        margin: 10% 10% 12% 3%;
+        font-size: 34px;
+    }
+    .name-list .line{
+        width: 108%;
+        right: -14px;
     }
     .services-text{
         width: 100%;
@@ -140,14 +162,19 @@
     h1{
         margin: 5% 0 0 29.9%;
     }
-    .logo{
-        margin-left: 50.3%;
-    }
     .caption{
         text-align: center;
     }
     .scroll{
         margin-left: 39%;
+    }
+    .name-list{
+        margin: 10% 19% 12% 5%;
+        font-size: 41px;
+    }
+    .name-list .line{
+        width: 120%;
+        right: -33px;
     }
     .services-name{
         margin: 0.5% 0 auto 36.2%;
@@ -159,10 +186,10 @@
 }
 @media only screen and (min-width: 992px) and (max-width: 1200px) {
     header{
-        height: 725px;
+        height: 650px;
     }
-    .logo{
-        margin-left: 53.3%;
+    h1{
+        margin: 4.9% 0 0 28.1%;
     }
     .caption{
         text-align: center;
