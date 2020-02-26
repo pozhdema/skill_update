@@ -1,3 +1,5 @@
+/*TODO: [global]more items aligned by center; use for container (header) text-align: center*/
+
 header{
     width: 80%;
     height: 825px;
@@ -9,19 +11,19 @@ h1{
     border-top: 1px solid rgba(182,155,103,1);
     line-height: 1.2;
     display: inline-block;
-    margin: 4.9% 0 0 36.1%;
+    margin: 4.9% 0 0 36.1%; /*not correct: use only margin top*/
     position: relative;
 }
 h1 span{
     font: 24px Ubuntu-Light;
-    color: rgba(180,180,180,1);
+    color: rgba(180,180,180,1); /*HEX*/
     position: absolute;
     bottom: -33px;
     right: -74px;
 }
 .lamp{
     width: 17.5%;
-    margin-left: 40.5%;
+    margin-left: 40.5%;/*redundant*/
     margin-top: 7%;
     opacity: 70%;
 }
@@ -29,17 +31,17 @@ h1 span{
     font-size: 47px;
     color: #b7a075;
     margin-top: 1.1%;
-    margin-left: 3.5%;
+    margin-left: 3.5%;/*why margin left? use only text-align: center*/
     letter-spacing: 0.5px;
 }
 .scroll{
     font-size: 16px;
-    color: rgba(69,69,69,255);
+    color: rgba(69,69,69,255);/*incorrect*/ /*use HEX*/
     margin-top: 9.9%;
-    margin-left: 41.2%;
-    display: block;
+    margin-left: 41.2%;/*redundant*/
+    display: block;/*redundant*/
 }
-.down{
+.down{/*change on pseudo element in .scroll*/
     display: block;
     width: 3%;
     margin-top: 0.4%;
