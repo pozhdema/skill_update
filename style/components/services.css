@@ -5,7 +5,7 @@ section{
 .services-name{
     font: 51px PlayfairDisplaySC-Bold;
     text-align: center;
-    margin-top: 0.2%;
+    margin-top: 2.9%;
     margin-bottom: 0%;
     padding-right: 22px;
     letter-spacing: -0.5px;
@@ -46,7 +46,7 @@ section{
     padding: 0;
 }
 .list-item{
-    padding-bottom: 18.9%;
+    padding-bottom: 19.2%;
 }
 .list-item a{
     text-decoration: none;
@@ -95,6 +95,9 @@ section{
         right: -6px;
         width: 100%;
     }
+    .list{
+        font-size: 20px;
+    }
     .services-text{
         width: 100%;
     }
@@ -103,12 +106,11 @@ section{
     }
 }
 
-@media only screen and (min-width : 321px) {
+@media only screen and (min-width: 320px) and (max-width: 576px) {
     .services-name{
         font-size: 25px;
     }
     .service{
-        display: flex;
         flex-direction: column;
     }
     .left-services{
@@ -125,6 +127,9 @@ section{
         right: -6px;
         width: 100%;
     }
+    .list{
+        font-size: 20px;
+    }
     .services-text{
         width: 100%;
     }
@@ -132,70 +137,71 @@ section{
         margin-left: 14%;
     }
 }
-
-@media only screen and (min-width : 576px) {
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+    section{
+        height: 530px;
+    }
     .services-name{
-        font-size: 35px;
+        font-size: 45px;
+        margin-bottom: 5%;
     }
     .left-services{
-        width: 90%;
-        text-align: center;
+        width: 30%;
+
     }
     .right-services{
-        width: 100%;
+        width: 60%;
     }
     .name-list{
-        font-size: 25px;
-        margin: 10% 0;
+        font-size: 33px;
     }
     .name-list .line{
-        width: 107%;
-        right: -19px;
+        right: -6px;
+        width: 100%;
     }
-    .list-item {
-        padding-bottom: 10%;
+    .list{
+        font-size: 21px;
     }
     .services-text{
         width: 100%;
-        margin-top: 0;
+        margin-top: 25%;
     }
     .laptop{
-        margin-left: 16.5%;
+        margin-left: 14%;
     }
 }
-
-/*@media only screen and (min-width : 768px) {
-
-}
-
-@media only screen and (min-width : 992px) {
-
-}*/
-
-@media only screen and (min-width : 1200px) {
-    .service{
-        flex-wrap: wrap;
-    }
-    .services-name{
-        margin-top: 3%;
-        margin-bottom: 3%;
-        font-size: 51px;
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    section{
+        height: 530px;
     }
     .left-services{
-        width: 22%;
-        padding-left: 1.5%;
-        padding-right: 8.5%;
+        width: 30%;
     }
     .right-services{
-        justify-content: flex-end;
-        width: 68%;
+        width: 60%;
     }
     .name-list{
-        font-size: 37px;
+        font-size: 36px;
+    }
+    .name-list .line{
+        right: -6px;
+        width: 100%;
+    }
+
+    .services-text{
+        width: 100%;
+        margin-top: 25%;
+    }
+    .laptop{
+        margin-left: 18%;
+    }
+}
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+    .name-list .line{
+        right: -62px;
     }
     .services-text{
-        width: 60%;
-        font-size: 17px;
-        margin-top: 8.4%;
+        width: 61%;
+        margin-top: 20.4%;
     }
 }

@@ -1,10 +1,10 @@
 header{
     width: 100%;
-    height: 825px;
-    text-align: center;
+    height: 790px;
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
 }
 h1{
     font: 47px PlayfairDisplaySC-Regular;
@@ -37,9 +37,9 @@ h1 span{
     letter-spacing: -0.7px;
 }
 .scroll{
-    width: 100%;
     left: -1%;
     position: relative;
+    align-self: center;
 }
 .scroll span{
     font-size: 16px;
@@ -58,7 +58,7 @@ h1 span{
 
 @media only screen and (max-width : 320px) {
     header {
-        height: 500px;
+        height: 450px;
     }
     h1 {
         font-size: 26px;
@@ -72,84 +72,76 @@ h1 span{
     .caption {
         font-size: 23px;
     }
-    .scroll {
-        width: 45%;
-    }
-    .scroll span::after {
-        transform: translate(-100%, 112%);
-    }
 }
 
-@media only screen and (min-width : 321px) {
-    header {
-        height: 500px;
-    }
-    h1 {
-        font-size: 26px;
-    }
-    h1 span {
-        font-size: 16px;
-    }
-    .lamp img {
-        width: 39%;
-    }
-    .caption {
-        font-size: 23px;
-    }
-    .scroll {
-        width: 45%;
-    }
-    .scroll span::after {
-        transform: translate(-100%, 112%);
-    }
-}
-
-@media only screen and (min-width : 576px) {
+@media only screen and (min-width: 320px) and (max-width: 576px) {
     header{
-        height: 550px;
+        height: 400px;
     }
     h1{
-        font-size: 35px;
+        font-size: 26px;
+    }
+    h1 span {
+        font-size: 16px;
+    }
+    .lamp img {
+        width: 39%;
+    }
+    .caption {
+        font-size: 23px;
+    }
+}
+
+@media only screen and (min-width: 576px) and (max-width: 768px) {
+    header{
+        height: 500px;
+    }
+    h1{
+        font-size: 30px;
+    }
+    h1 span{
+        font-size: 18px;
+    }
+    .lamp img{
+        width: 45%;
+    }
+    .caption{
+        font-size: 28px;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 992px) {
+    header{
+        height: 530px;
+    }
+    h1{
+        font-size: 36px;
     }
     h1 span{
         font-size: 20px;
     }
+    .lamp img{
+        width: 60%;
+    }
     .caption{
-        font-size: 30px;
-    }
-    .scroll span::after {
-        transform: translate(-255%, 112%);
+        font-size: 38px;
     }
 }
 
-/*@media only screen and (min-width : 768px) {
-
-}
-
-@media only screen and (min-width : 992px) {
-
-}*/
-
-@media only screen and (min-width : 1200px) {
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
     header{
-        height: 700px;
+        height: 650px;
     }
-    h1 {
-        font-size: 47px;
+    h1{
+        font-size: 45px;
     }
-    h1 span {
-        font-size: 24px;
+    h1 span{
+        font-size: 22px;
     }
-    .lamp img {
-        width: 81.5%;
+    .lamp img{
+        width: 70%;
     }
-    .caption {
-        font-size: 48.5px;
-    }
-    .scroll {
-        width: 100%;
-    }
-    .scroll span::after {
-        transform: translate(-250%, 112%);
+    .caption{
+        font-size: 43px;
     }
 }
