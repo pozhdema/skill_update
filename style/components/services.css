@@ -74,105 +74,21 @@ section{
     opacity: 50%;
 }
 
-@media only screen and (max-width : 320px) {
-    .services-name{
-        font-size: 25px;
-    }
-    .service{
-        flex-direction: column;
-    }
-    .left-services{
-        width: 90%;
-        text-align: center;
-    }
-    .right-services{
-        width: 100%;
-    }
-    .name-list{
-        font-size: 30px;
-    }
+@media only screen /*and (min-width: 992px) */and (max-width: 1200px) {
     .name-list .line{
-        right: -6px;
-        width: 100%;
-    }
-    .list{
-        font-size: 20px;
+        right: -62px;
     }
     .services-text{
-        width: 100%;
-    }
-    .laptop{
-        margin-left: 14%;
+        width: 61%;
+        margin-top: 20.4%;
     }
 }
-
-@media only screen and (min-width: 320px) and (max-width: 576px) {
-    .services-name{
-        font-size: 25px;
-    }
-    .service{
-        flex-direction: column;
-    }
-    .left-services{
-        width: 90%;
-        text-align: center;
-    }
-    .right-services{
-        width: 100%;
-    }
-    .name-list{
-        font-size: 30px;
-    }
-    .name-list .line{
-        right: -6px;
-        width: 100%;
-    }
-    .list{
-        font-size: 20px;
-    }
-    .services-text{
-        width: 100%;
-    }
-    .laptop{
-        margin-left: 14%;
-    }
-}
-@media only screen and (min-width: 576px) and (max-width: 768px) {
+@media only screen /*and (min-width: 768px)*/ and (max-width: 992px) {
     section{
         height: 530px;
     }
-    .services-name{
-        font-size: 45px;
-        margin-bottom: 5%;
-    }
-    .left-services{
-        width: 30%;
-
-    }
-    .right-services{
-        width: 60%;
-    }
-    .name-list{
-        font-size: 33px;
-    }
-    .name-list .line{
-        right: -6px;
-        width: 100%;
-    }
-    .list{
-        font-size: 21px;
-    }
-    .services-text{
-        width: 100%;
-        margin-top: 25%;
-    }
-    .laptop{
-        margin-left: 14%;
-    }
-}
-@media only screen and (min-width: 768px) and (max-width: 992px) {
-    section{
-        height: 530px;
+    .services-name {
+        font-size: 36px;
     }
     .left-services{
         width: 30%;
@@ -187,7 +103,6 @@ section{
         right: -6px;
         width: 100%;
     }
-
     .services-text{
         width: 100%;
         margin-top: 25%;
@@ -196,12 +111,101 @@ section{
         margin-left: 18%;
     }
 }
-@media only screen and (min-width: 992px) and (max-width: 1200px) {
+@media only screen /*and (min-width: 576px)*/ and (max-width: 768px) {
+    section{
+        height: 530px;
+    }
+    .services-name{
+        font-size: 25px;
+        margin-bottom: 5%;
+    }
+    .left-services{
+        width: 30%;
+
+    }
+    .right-services{
+        width: 60%;
+    }
+    .name-list{
+        font-size: 25px;
+    }
     .name-list .line{
-        right: -62px;
+        right: -6px;
+        width: 100%;
+    }
+    .list{
+        font-size: 20px;
     }
     .services-text{
-        width: 61%;
-        margin-top: 20.4%;
+        width: 100%;
+        margin-top: 25%;
+    }
+    .laptop{
+        margin-left: 14%;
+    }
+}
+@media only screen /*and (min-width: 320px)*/ and (max-width: 576px) {
+    .services-name{
+        font-size: 20px;
+    }
+    .service{
+        flex-direction: column;
+    }
+    .left-services{
+        width: 90%;
+        text-align: center;
+    }
+    .right-services{
+        width: 100%;
+    }
+    .name-list{
+        font-size: 20px;
+    }
+    .name-list .line{
+        right: -6px;
+        width: 100%;
+    }
+    .list{
+        font-size: 15px;
+    }
+    .services-text{
+        width: 100%;
+    }
+    .laptop{
+        margin-left: 14%;
+    }
+}
+@media only screen and (max-width : 320px) {
+    .services-name{
+        font-size: 20px;
+    }
+    .service{
+        flex-direction: column;
+    }
+    .left-services{
+        width: 90%;
+        text-align: center;
+    }
+    .right-services{
+        width: 100%;
+    }
+    .name-list{
+        font-size: 20px;
+    }
+    .name-list .line{
+        right: -6px;
+        width: 100%;
+    }
+    .list{
+        font-size: 15px;
+    }
+    .list-item{
+        padding-bottom: 30px;
+    }
+    .services-text{
+        width: 100%;
+    }
+    .laptop{
+        margin-left: 40px;
     }
 }

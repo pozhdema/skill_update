@@ -19,21 +19,19 @@ h1 span{
     font: 24px Ubuntu-Light;
     color: #b4b4b4;
     position: absolute;
-    bottom: -35px;
-    right: -74px;
+    bottom: -62%;
+    right: -24%;
 }
-.lamp{
+.lamp {
+    width: 17.5%;
     margin-top: 5%;
     margin-left: -1%;
     opacity: 70%;
 }
-.lamp img {
-    width: 81.5%;
-}
 .caption{
     font-size: 48.5px;
     color: #b7a075;
-    margin: 0.4% 0 9.2% -2%;
+    margin: 0.9% 0 9.2% -2%;
     letter-spacing: -0.7px;
 }
 .scroll{
@@ -56,61 +54,24 @@ h1 span{
     transform: translate(-250%, 112%);
 }
 
-@media only screen and (max-width : 320px) {
-    header {
-        height: 450px;
-    }
-    h1 {
-        font-size: 26px;
-    }
-    h1 span {
-        font-size: 16px;
-    }
-    .lamp img {
-        width: 39%;
-    }
-    .caption {
-        font-size: 23px;
-    }
-}
-
-@media only screen and (min-width: 320px) and (max-width: 576px) {
+@media only screen /*and (min-width: 992px) */and (max-width: 1200px) {
     header{
-        height: 400px;
+        height: 650px;
     }
     h1{
-        font-size: 26px;
-    }
-    h1 span {
-        font-size: 16px;
-    }
-    .lamp img {
-        width: 39%;
-    }
-    .caption {
-        font-size: 23px;
-    }
-}
-
-@media only screen and (min-width: 576px) and (max-width: 768px) {
-    header{
-        height: 500px;
-    }
-    h1{
-        font-size: 30px;
+        font-size: 45px;
     }
     h1 span{
-        font-size: 18px;
+        font-size: 22px;
     }
     .lamp img{
-        width: 45%;
+        width: 70%;
     }
     .caption{
-        font-size: 28px;
+        font-size: 43px;
     }
 }
-
-@media only screen and (min-width: 768px) and (max-width: 992px) {
+@media only screen /*and (min-width: 768px) */and (max-width: 992px) {
     header{
         height: 530px;
     }
@@ -127,21 +88,54 @@ h1 span{
         font-size: 38px;
     }
 }
-
-@media only screen and (min-width: 992px) and (max-width: 1200px) {
+@media only screen/* and (min-width: 576px) */and (max-width: 768px) {
     header{
-        height: 650px;
+        height: 400px;
     }
     h1{
-        font-size: 45px;
+        font-size: 30px;
     }
     h1 span{
-        font-size: 22px;
+        font-size: 18px;
     }
     .lamp img{
-        width: 70%;
+        width: 45%;
     }
     .caption{
-        font-size: 43px;
+        font-size: 28px;
+    }
+}
+@media only screen /*and (min-width: 320px)*/ and (max-width: 576px) {
+    header{
+        height: 350px;
+    }
+    h1{
+        font-size: 26px;
+    }
+    h1 span {
+        font-size: 16px;
+    }
+    .lamp img {
+        width: 39%;
+    }
+    .caption {
+        font-size: 23px;
+    }
+}
+@media only screen and (max-width : 320px) {
+    header {
+        height: 350px;
+    }
+    h1 {
+        font-size: 26px;
+    }
+    h1 span {
+        font-size: 16px;
+    }
+    .lamp img {
+        width: 39%;
+    }
+    .caption {
+        font-size: 23px;
     }
 }
