@@ -3,192 +3,151 @@
 @import "components/services.css";
 @import "components/fonts.css";
 
-/*min device 320px*/
-@media only screen and (max-width : 767px) {
-    h1 {
-        font-size: 25px;/*replace*/
-    }
-
-    h1 span {
-       /*fixed font size*/
-    }
-}
-
-@media only screen and (min-width : 768px) {
-    h1 {
-        font-size: 3vw;/*replace*/
-    }
-
-    h1 span {
-        font-size: 2vw;/*replace*/
-    }
-}
-
-@media only screen and (min-width : 1600px) {
-    h1 {
-        font-size: 47px;
-    }
-}
-
-/*replace the same for h2*/
-
-
-@media only screen and (max-width : 375px) {
+/*@media only screen and (max-width : 320px) {
     header{
-        height: 440px;
-    }
-    h1{
-        font-size: 31px;
-    }
-    h1 span {
-        font-size: 20px;
-    }
-    .lamp {
-        width: 35%;
-    }
-    .caption{
-        font-size: 25px;
-        text-align: center;
-    }
-    .services{
-        flex-direction: column;
-    }
-    .left-services {
-        width: 100%;
-    }
-    .right-services{
-        width: 100%;
-    }
-    .name-list {
-        font-size: 41px;
-        margin: 10% 10% 12% 5%;
-    }
-    .name-list .line{
-        width: 113%;
-        right: -34px;
-    }
-    .list{
-        text-align: center;
-        padding-left: 0;
-    }
-    .services-text{
-        width: 100%;
-        margin-top: 0;
-    }
-    .laptop {
-        width: 95%;
-    }
-}
-@media only screen and (min-width: 375px) and (max-width: 576px) {
-    header{
-        height: 530px;
-    }
-    h1{
-        font-size: 39px;
-    }
-    .lamp img {
-        width: 20%;
-    }
-    .services-name{
-        margin-top: 15.5%;
-    }
-    .services{
-        flex-direction: column;
-        text-align: center;
-    }
-    .left-services {
-        width: 100%;
-        justify-content: center;
-    }
-    .right-services{
-        width: 100%;
-        justify-content: center;
-    }
-    .name-list{
-        font-size: 37px;
-        margin: 3%;
-    }
-    .name-list .line{
-        right: -8px;
-        width: 104%;
-    }
-    .services-text{
-        width: 100%;
-        margin-top: 0;
-    }
-    .laptop{
-        margin-left: 13.5%;
-    }
-}
-@media only screen and (min-width: 576px) and (max-width: 768px) {
-    header{
-        height: 525px;
-    }
-    .lamp{
-        width: 25%;
-        margin-top: 25%;
-    }
-    .caption{
-        text-align: center;
-    }
-    section{
-        height: 600px;
-    }
-    .services-name{
-        margin-top: 10%;
-    }
-    .left-services{
-        width: 50%;
-    }
-    .right-services{
-        width: 50%;
-    }
-    .name-list{
-        margin: 10% 10% 12% 3%;
-        font-size: 34px;
-    }
-    .name-list .line{
-        width: 108%;
-        right: -14px;
-    }
-    .services-text{
-        width: 100%;
-        margin-top: 29.1%;
-    }
-    .laptop{
-        width: 100%;
-        margin-top: 17%;
-    }
-}
-@media only screen and (min-width: 768px) {
-    header {
         height: 500px;
     }
+    h1{
+        font-size: 26px;
+    }
+    h1 span{
+        font-size: 16px;
+    }
+    .lamp img {
+        width: 39%;
+    }
     .caption{
+        font-size: 23px;
+    }
+    .scroll{
+        width: 45%;
+        margin-left: 27%;
+    }
+    .scroll span::after{
+        transform: translate(-100%, 112%);
+    }
+    .services-name{
+        font-size: 25px;
+    }
+    .service{
+        display: flex;
+        flex-direction: column;
+    }
+    .left-services{
+        width: 90%;
         text-align: center;
     }
+    .right-services{
+        width: 100%;
+    }
     .name-list{
-        margin: 10% 19% 12% 5%;
-        font-size: 41px;
+        font-size: 30px;
     }
     .name-list .line{
-        width: 120%;
-        right: -33px;
+        right: -6px;
+        width: 100%;
     }
     .services-text{
-        width: 80%;
-        margin-top: 17.1%;
+        width: 100%;
+    }
+    .laptop{
+        margin-left: 14%;
     }
 }
-@media only screen and (min-width: 992px) and (max-width: 1200px) {
+@media only screen and (max-width : 576px) {
+    header{
+        height: 410px;
+    }
+    h1{
+        font-size: 35px;
+    }
+    h1 span{
+        font-size: 20px;
+    }
+    .caption{
+        font-size: 30px;
+    }
+    .services-name{
+        font-size: 35px;
+    }
+    .left-services{
+        width: 90%;
+        text-align: center;
+    }
+    .right-services{
+        width: 100%;
+    }
+    .name-list{
+        font-size: 25px;
+        margin: 10% 0;
+    }
+    .name-list .line{
+        width: 107%;
+        right: -19px;
+    }
+    .list-item {
+        padding-bottom: 10%;
+    }
+    .services-text{
+        width: 100%;
+        margin-top: 0;
+    }
+    .laptop{
+        margin-left: 16.5%;
+    }
+}
+@media only screen and (min-width : 577px) {
+    header{
+        height: 500px;
+    }
+    h1{
+        font-size: 6.3vw;
+    }
+    h1 span{
+        font-size: 3.5vw;
+    }
+    .caption{
+        font-size: 5.2vw;
+    }
+    .services-name{
+        font-size: 5.3vw;
+    }
+    .left-services{
+        width: 90%;
+        text-align: center;
+    }
+    .right-services{
+        width: 100%;
+    }
+    .name-list{
+        font-size: 4vw;
+        margin: 10%;
+    }
+    .name-list .line{
+        width: 99%;
+        right: -1px;
+    }
+    .list-item {
+        padding-bottom: 10%;
+    }
+    .services-text {
+        width: 100%;
+        margin-top: 0;
+    }
+    .laptop{
+        margin-left: 16.5%;
+    }
+}
+@media only screen and (min-width : 768px) {
     header{
         height: 650px;
     }
-    .lamp {
-        margin-top: 15%;
-    }
-    .services-text{
-        width: 100%;
-        margin-top: 16.1%;
+}
+@media only screen and (min-width : 992px) {
+    header{
+        height: 700px;
     }
 }
+@media only screen and (max-width : 1200px) {
+
+}*/

@@ -1,5 +1,5 @@
 section{
-    width: 80%;
+    width: 100%;
     height: 650px;
 }
 .services-name{
@@ -17,7 +17,9 @@ section{
 }
 .left-services{
     justify-content: flex-start;
-    width: 32%;
+    width: 22%;
+    padding-left: 1.5%;
+    padding-right: 8.5%;
 }
 .right-services{
     justify-content: flex-end;
@@ -25,11 +27,12 @@ section{
 }
 .name-list{
     color: rgba(182,155,103,1);
-    font-size: 46px;
-    letter-spacing: 0.5px;
+    font-size: 47px;
+    letter-spacing: -0.16px;
     border-top: 1px solid #b69b67;
     position: relative;
-    margin: 10% 26% 12% 5%;
+    margin-top: 14%;
+    margin-bottom: 18%;
 }
 .name-list .line{
     border-bottom: 1px solid #ffffff;
@@ -40,10 +43,10 @@ section{
 }
 .list{
     list-style-type: none;
-    padding-left: 5%;
+    padding: 0;
 }
 .list-item{
-    padding-bottom: 13.9%;
+    padding-bottom: 18.9%;
 }
 .list-item a{
     text-decoration: none;
@@ -53,11 +56,11 @@ section{
     color: #b69b67;
 }
 .services-text{
-    width: 48%;
+    width: 47%;
     font-size: 17px;
     margin-top: 8.4%;
-    margin-left: 1.6%;
-    letter-spacing: -0.3px;
+    margin-left: 1.8%;
+    letter-spacing: -0.435px;
     line-height: 19px;
     text-align: justify;
 }
@@ -69,4 +72,130 @@ section{
     margin-left: 7.5%;
     margin-top: 7%;
     opacity: 50%;
+}
+
+@media only screen and (max-width : 320px) {
+    .services-name{
+        font-size: 25px;
+    }
+    .service{
+        flex-direction: column;
+    }
+    .left-services{
+        width: 90%;
+        text-align: center;
+    }
+    .right-services{
+        width: 100%;
+    }
+    .name-list{
+        font-size: 30px;
+    }
+    .name-list .line{
+        right: -6px;
+        width: 100%;
+    }
+    .services-text{
+        width: 100%;
+    }
+    .laptop{
+        margin-left: 14%;
+    }
+}
+
+@media only screen and (min-width : 321px) {
+    .services-name{
+        font-size: 25px;
+    }
+    .service{
+        display: flex;
+        flex-direction: column;
+    }
+    .left-services{
+        width: 90%;
+        text-align: center;
+    }
+    .right-services{
+        width: 100%;
+    }
+    .name-list{
+        font-size: 30px;
+    }
+    .name-list .line{
+        right: -6px;
+        width: 100%;
+    }
+    .services-text{
+        width: 100%;
+    }
+    .laptop{
+        margin-left: 14%;
+    }
+}
+
+@media only screen and (min-width : 576px) {
+    .services-name{
+        font-size: 35px;
+    }
+    .left-services{
+        width: 90%;
+        text-align: center;
+    }
+    .right-services{
+        width: 100%;
+    }
+    .name-list{
+        font-size: 25px;
+        margin: 10% 0;
+    }
+    .name-list .line{
+        width: 107%;
+        right: -19px;
+    }
+    .list-item {
+        padding-bottom: 10%;
+    }
+    .services-text{
+        width: 100%;
+        margin-top: 0;
+    }
+    .laptop{
+        margin-left: 16.5%;
+    }
+}
+
+/*@media only screen and (min-width : 768px) {
+
+}
+
+@media only screen and (min-width : 992px) {
+
+}*/
+
+@media only screen and (min-width : 1200px) {
+    .service{
+        flex-wrap: wrap;
+    }
+    .services-name{
+        margin-top: 3%;
+        margin-bottom: 3%;
+        font-size: 51px;
+    }
+    .left-services{
+        width: 22%;
+        padding-left: 1.5%;
+        padding-right: 8.5%;
+    }
+    .right-services{
+        justify-content: flex-end;
+        width: 68%;
+    }
+    .name-list{
+        font-size: 37px;
+    }
+    .services-text{
+        width: 60%;
+        font-size: 17px;
+        margin-top: 8.4%;
+    }
 }
