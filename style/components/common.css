@@ -1,9 +1,28 @@
-body{
-    width: 80%;
-    min-width: 320px;
+/*minimal device size - 320px*/
+
+* {
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
     background: #2C2C2C;
     font: 24px Ubuntu-Light;
     color: #b4b4b4;
     padding: 0 10%;
+}
+
+main {
+    margin-top: 100px;
+}
+
+section {
+}
+
+main h2 {
+    font: 51px PlayfairDisplaySC-Bold;
+    text-align: center;
+    letter-spacing: -0.5px;
+    color: #b4b4b4;
 }
