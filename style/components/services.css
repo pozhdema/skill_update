@@ -1,5 +1,5 @@
 #services {
-    margin-top: 13.5%;
+    margin-top: 23%;
 }
 
 .services {
@@ -10,7 +10,7 @@
 
 .name-list {
     color: #b69b67;
-    font-size: 30px;
+    font-size: 25px;
     letter-spacing: -0.16px;
     border-bottom: 1px solid rgba(255, 255, 255, .1);
 }
@@ -22,6 +22,7 @@
 .list {
     list-style-type: none;
     margin-top: 20px;
+    font-size: 20px
 }
 
 .list li{
@@ -69,6 +70,9 @@
 }
 
 @media screen and (min-width: 768px) {
+    #services{
+        margin-top: 13.8%;
+    }
     .services {
         flex-direction: row;
     }
@@ -101,6 +105,8 @@
         margin-top: 6%;
         margin-bottom: 14%;
     }
-
+    .list{
+        font-size: 24px;
+    }
 }
 

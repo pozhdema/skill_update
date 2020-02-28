@@ -26,7 +26,7 @@ h1 span {
 
 .lamp {
     width: 17.5%;
-    margin-top: 7%;
+    margin-top: 20%;
     margin-left: -1%;
     opacity: 70%;
     min-width: 100px;
@@ -35,14 +35,14 @@ h1 span {
 .caption {
     font-size: 23px;
     color: #b7a075;
-    margin: 1.7% 0 10%;
+    margin: 6% 0 10%;
     letter-spacing: -0.7px;
 }
 
 .scroll {
     position: relative;
     align-self: center;
-    font-size: 16px;
+    font-size: 13px;
     color: #454545;
 }
 
@@ -67,8 +67,12 @@ h1 span {
          font-size: 23px;
          right: -20%;
      }
+     .lamp{
+         margin-top: 8%;
+     }
     .caption {
         font-size: 3.5vw;
+        margin-top: 1.1%;
     }
 }
 
