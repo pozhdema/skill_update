@@ -13,15 +13,8 @@ body{
     padding: 0 10%;
 }
 
-main {
-    margin-top: 100px;
-}
-
-section {
-}
-
 main h2 {
-    font: 51px PlayfairDisplaySC-Bold;
+    font: 30px PlayfairDisplaySC-Bold;
     text-align: center;
     letter-spacing: -0.5px;
     color: #b4b4b4;
