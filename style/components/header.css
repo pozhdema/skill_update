@@ -24,9 +24,66 @@ h1 span {
     right: -10%;
 }
 
+#menu-toggle{
+    width: 50px;
+    height: 50px;
+    border: 1px solid #454545;
+    position: relative;
+    left: 40%;
+    bottom: -55px;
+    z-index: 1;
+}
+#ch-areas {
+    display: block;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    opacity: 0;
+}
+
+#menu-toggle label{
+    width: 50px;
+    height: 50px;
+    display: block;
+    position: absolute;
+}
+
+#menu-toggle label span {
+    display: block;
+    width: 80%;
+    height: 2px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    position: relative;
+    background: #b4b4b4;
+    z-index: 1;
+}
+
+#menu-toggle label span:nth-of-type(2n+1){
+    transform: translate(5px, 0px);
+    animation: lt 2s ease 0;
+}
+
+#menu-toggle label span:nth-of-type(2n){
+    transform: translate(5px, 0px);
+    animation: rt 2s ease 0;
+}
+
+#menu-toggle label:hover span:nth-of-type(2n+1){
+    animation: lt 2s ease 1;
+    transition: transform 2s ease ;
+    transform: translate(25px, 0px);
+}
+
+#menu-toggle label:hover span:nth-of-type(2n){
+    animation: rt 2s ease 1;
+    transition: transform 2s ease ;
+    transform: translate(-15px, 0px);
+}
+
 .lamp {
     width: 17.5%;
-    margin-top: 20%;
+    margin-top: 10%;
     margin-left: -1%;
     opacity: 70%;
     min-width: 100px;
@@ -50,14 +107,27 @@ h1 span {
     content: "";
     background-image: url(../../images/scroll.png);
     background-repeat: no-repeat;
+    background-size: 100%;
     position: absolute;
-    width: 48px;
-    height: 26px;
+    width: 24px;
+    height: 14px;
     top: 100%;
     left: 50%;
     transform: translate(-50%, 50%);
+    animation: upDown 2s ease-in-out infinite;
 }
 
+@keyframes upDown {
+    0% {
+        transform: translate(-50%, 50%);
+    }
+    50%{
+        transform: translate(-50%, 100%);
+    }
+    100% {
+        transform: translate(-50%, 50%);
+    }
+}
 
 @media screen and (min-width: 576px) {
     h1 {
@@ -68,7 +138,7 @@ h1 span {
          right: -20%;
      }
      .lamp{
-         margin-top: 8%;
+         margin-top: 3%;
      }
     .caption {
         font-size: 3.5vw;
@@ -88,6 +158,36 @@ h1 span {
     .caption {
         font-weight: 500;
         font-size: 45px;
+    }
+    #menu-toggle{
+        width: 60px;
+        height: 60px;
+        left: 46%;
+        bottom: -89px;
+    }
+    #ch-areas {
+        width: 60px;
+        height: 60px;
+    }
+
+    #menu-toggle label{
+        width: 60px;
+        height: 60px;
+    }
+
+    #menu-toggle label span:nth-of-type(2n+1){
+        transform: translate(5px, 5px);
+    }
+
+    #menu-toggle label span:nth-of-type(2n){
+        transform: translate(5px, 5px);
+    }
+    #menu-toggle label:hover span:nth-of-type(2n+1){
+        transform: translate(25px, 5px);
+    }
+
+    #menu-toggle label:hover span:nth-of-type(2n){
+        transform: translate(-15px, 5px);
     }
 }
 

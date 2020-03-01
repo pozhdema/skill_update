@@ -17,7 +17,7 @@
     color: #b69b67;
     font-size: 25px;
     letter-spacing: -0.16px;
-    border-bottom: 1px solid rgba(255, 255, 255, .1);
+    border-bottom: 1px solid #454545;
 }
 
 .name-list span {
@@ -60,9 +60,9 @@
 
 .laptop {
     width: 78%;
-    margin-left: 5.5%;
     margin-top: 9%;
     opacity: 50%;
+    align-self: center;
 }
 
 
@@ -93,7 +93,7 @@
         margin-top: 6%;
     }
     .list li{
-        margin-bottom: 14%;
+        margin-bottom: 52px;
     }
 }
 
@@ -115,6 +115,9 @@
     }
     .services-text {
         align-self: flex-start;
+    }
+    .laptop{
+        margin-left: -11.5%;
     }
 }
 
