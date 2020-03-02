@@ -26,7 +26,7 @@ h1 span {
 
 .lamp {
     width: 17.5%;
-    margin-top: -16%;
+    margin-top: 30%;
     opacity: 70%;
     min-width: 100px;
 }
@@ -84,7 +84,7 @@ h1 span {
      }
 
      .lamp{
-         margin-top: -5%;
+         margin-top: 15%;
      }
 
     .caption {
@@ -105,6 +105,9 @@ h1 span {
     .caption {
         font-weight: 500;
         font-size: 45px;
+    }
+    .lamp{
+        margin-top: 8%;
     }
 }
 
