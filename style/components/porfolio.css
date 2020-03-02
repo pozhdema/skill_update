@@ -36,7 +36,7 @@ option{
     justify-content: space-between;
 }
 
-.slider div{
+.slider div {
     height: 385px;
     width: 100%;
     display: flex;
@@ -46,21 +46,30 @@ option{
     opacity: 75%;
 }
 
+.slider > div {
+    position: relative;
+    /*padding-top: 100%;*/
+}
+
 .slider div button{
+    display: flex;
+    justify-content: center;
     font: 23px Ubuntu-Medium;
     color: #303030;
     border: 1px solid #b69b67;
     background: #b69b67;
     width: 46%;
     height: 20%;
-    margin-left: 29%;
-    margin-top: 14%;
-    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity .4s linear;
 }
 
 .slider div:hover button{
-    display: flex;
-    justify-content: center;
+    opacity: 1;
 }
 
 .slider div:hover .slider-text{
@@ -90,7 +99,8 @@ option{
     margin-top: auto;
     flex-direction: column;
     color: #303030;
-    opacity: 100%;
+    opacity: 1;
+    transition: opacity .4s linear;
 }
 
 .slider div .slider-text h3{
@@ -218,4 +228,9 @@ option{
     .slider div .slider-text p{
         margin-top: 58px;
     }
+}
+
+.slider > div {
+    height: calc(50% - 10px);
+    width: calc(50% - 10px);
 }

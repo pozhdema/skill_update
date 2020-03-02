@@ -13,6 +13,11 @@ body{
     padding: 0 10% 100px;
 }
 
+.wrapper {
+    max-width: 1200px;
+    margin: auto;
+}
+
 main h2 {
     font: 30px PlayfairDisplaySC-Bold;
     text-align: center;

@@ -1,5 +1,5 @@
 /*format props by priority*/
-#navigation{
+#navigation {
     display: flex;
     flex-direction: column;
     align-self: flex-end;
@@ -10,7 +10,7 @@
     border: 1px solid #454545;
 }
 
-.sandwich{
+.sandwich {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -19,23 +19,23 @@
     height: 100%;
 }
 
-.sandwich span{
+.sandwich span {
     width: 60%;
     height: 1px;
-    background:#b4b4b4;
+    background: #b4b4b4;
     transition: transform 2s ease;
 }
 
-.sandwich:hover span:nth-of-type(2n+1){
+.sandwich:hover span:nth-of-type(2n+1) {
     transform: translateX(25px);
 }
 
-.sandwich:hover span:nth-of-type(2n){
+.sandwich:hover span:nth-of-type(2n) {
     transform: translateX(-25px);
 }
 
 @media screen and (min-width: 1200px) {
-    #navigation{
+    #navigation {
         width: 65px;
         height: 65px;
         top: 203px;
