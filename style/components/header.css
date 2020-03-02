@@ -24,67 +24,9 @@ h1 span {
     right: -10%;
 }
 
-#menu-toggle{
-    width: 50px;
-    height: 50px;
-    border: 1px solid #454545;
-    position: relative;
-    left: 40%;
-    bottom: -55px;
-    z-index: 1;
-}
-#ch-areas {
-    display: block;
-    width: 50px;
-    height: 50px;
-    position: absolute;
-    opacity: 0;
-}
-
-#menu-toggle label{
-    width: 50px;
-    height: 50px;
-    display: block;
-    position: absolute;
-}
-
-#menu-toggle label span {
-    display: block;
-    width: 80%;
-    height: 2px;
-    margin-bottom: 10px;
-    margin-top: 10px;
-    position: relative;
-    background: #b4b4b4;
-    z-index: 1;
-}
-
-#menu-toggle label span:nth-of-type(2n+1){
-    transform: translate(5px, 0px);
-    animation: lt 2s ease 0;
-}
-
-#menu-toggle label span:nth-of-type(2n){
-    transform: translate(5px, 0px);
-    animation: rt 2s ease 0;
-}
-
-#menu-toggle label:hover span:nth-of-type(2n+1){
-    animation: lt 2s ease 1;
-    transition: transform 2s ease ;
-    transform: translate(25px, 0px);
-}
-
-#menu-toggle label:hover span:nth-of-type(2n){
-    animation: rt 2s ease 1;
-    transition: transform 2s ease ;
-    transform: translate(-15px, 0px);
-}
-
 .lamp {
     width: 17.5%;
-    margin-top: 10%;
-    margin-left: -1%;
+    margin-top: -16%;
     opacity: 70%;
     min-width: 100px;
 }
@@ -121,9 +63,11 @@ h1 span {
     0% {
         transform: translate(-50%, 50%);
     }
+
     50%{
         transform: translate(-50%, 100%);
     }
+
     100% {
         transform: translate(-50%, 50%);
     }
@@ -133,13 +77,16 @@ h1 span {
     h1 {
         font-size: 47px;
     }
+
      h1 span{
          font-size: 23px;
          right: -20%;
      }
+
      .lamp{
-         margin-top: 3%;
+         margin-top: -5%;
      }
+
     .caption {
         font-size: 3.5vw;
         margin-top: 1.1%;
@@ -158,36 +105,6 @@ h1 span {
     .caption {
         font-weight: 500;
         font-size: 45px;
-    }
-    #menu-toggle{
-        width: 60px;
-        height: 60px;
-        left: 46%;
-        bottom: -89px;
-    }
-    #ch-areas {
-        width: 60px;
-        height: 60px;
-    }
-
-    #menu-toggle label{
-        width: 60px;
-        height: 60px;
-    }
-
-    #menu-toggle label span:nth-of-type(2n+1){
-        transform: translate(5px, 5px);
-    }
-
-    #menu-toggle label span:nth-of-type(2n){
-        transform: translate(5px, 5px);
-    }
-    #menu-toggle label:hover span:nth-of-type(2n+1){
-        transform: translate(25px, 5px);
-    }
-
-    #menu-toggle label:hover span:nth-of-type(2n){
-        transform: translate(-15px, 5px);
     }
 }
 

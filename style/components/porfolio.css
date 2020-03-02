@@ -4,6 +4,7 @@
     align-items: center;
     margin-top: 14%;
 }
+
 select {
     position: relative;
     width: 185px;
@@ -22,6 +23,7 @@ select {
     outline: none;
     margin: 34px 0 55px;
 }
+
 option{
     background-color: #2C2C2C;
 }
@@ -39,30 +41,56 @@ option{
     width: 100%;
     display: flex;
     flex-direction: column;
+    background-size: cover;
+    background-repeat: no-repeat;
+    opacity: 75%;
 }
 
-.wrapper-img{
-    width: 52%;
-    overflow: hidden;
+.slider div button{
+    font: 23px Ubuntu-Medium;
+    color: #303030;
+    border: 1px solid #b69b67;
+    background: #b69b67;
+    width: 46%;
+    height: 20%;
+    margin-left: 29%;
+    margin-top: 14%;
+    display: none;
 }
-/**
-Question:
-does not match  with psd
-1) Can create own class for each image with custom margins;
-2) Can cut images in photoshop;
-3) Can stay as-is.
- */
-.wrapper-img img{
-    width: 203%;
-    margin: -2% 0% -59% -2%;
-    opacity: 50%;
+
+.slider div:hover button{
+    display: flex;
+    justify-content: center;
+}
+
+.slider div:hover .slider-text{
+    opacity: 0;
+}
+
+.slider div:nth-child(1){
+     background-image: url("../../images/1-hover.png");
+}
+
+.slider div:nth-child(2){
+    background-image: url("../../images/3-hover.png");
+}
+
+.slider div:nth-child(3){
+    background-image: url("../../images/2-hover.png");
+}
+
+.slider div:nth-child(4){
+    background-image: url("../../images/4-hover.png");
 }
 
 .slider div .slider-text{
     background: #b69b67;
     width: 100%;
+    height: 192.5px;
+    margin-top: auto;
     flex-direction: column;
     color: #303030;
+    opacity: 100%;
 }
 
 .slider div .slider-text h3{
@@ -140,17 +168,16 @@ does not match  with psd
         flex-wrap: wrap;
     }
 
-    .wrapper-img img {
-        width: 256%;
-    }
-
     .slider div .slider-text {
         width: 50%;
+        height: 214.5px;
+        margin-left: auto;
     }
 
     .slider div .slider-text h3{
         font-size: 17px;
     }
+
     .slider div .slider-text p{
         margin-top: 28px;
     }
@@ -173,14 +200,6 @@ does not match  with psd
     .slider div {
         height: 215px;
         flex-direction: row;
-    }
-
-    .slider div .wrapper-img{
-        width: 52%;
-    }
-
-    .wrapper-img img {
-        width: 203%;
     }
 
     .slider div .slider-text {
