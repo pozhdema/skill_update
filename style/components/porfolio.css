@@ -55,8 +55,7 @@ option{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 46%;
-    height: 20%;/*relative height. why? do you have relative font size?*/
+    padding: 5px;
     background: #b69b67;
     border: 1px solid #b69b67;
     opacity: 0;
@@ -222,6 +221,11 @@ option{
     .slider-item{
         height: 215px; /*fixed height only for mobile*/
     }
+
+    .slider-item button{
+        padding: 10px;
+    }
+
     .slider-item button a{
         font-size: 20px;
     }
