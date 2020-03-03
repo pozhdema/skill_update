@@ -112,18 +112,19 @@ option{
 }
 
 .slider-text h3{
+    position: relative;
+    width: 80%;
     font: 23px Ubuntu-Medium;
     letter-spacing: -1.8px;
-    position: relative;
 }
 
 .slider-text h3:after{
     content: "";
-    border-bottom: 1px solid #303030;
     position: absolute;
-    width: 80%;
-    left: -8%;
+    width: 105%;
+    left: -12%;
     bottom: -8%;
+    border-bottom: 1px solid #303030;
 }
 
 .slider-text p{
@@ -163,17 +164,24 @@ option{
         flex-wrap: wrap;
         height: 1060px;
     }
+
     .slider-item{
         flex-direction: row;
         width: 100%;
     }
+
     .slider-text{
         width: 50%;
         left: 50%;
         padding: 3% 4% 3%;
     }
+
+    .slider-text h3{
+        width: 90%;
+    }
+
     .slider-text h3:after{
-        width: 150%;
+        width: 145%;
         left: -54%;
     }
 }
@@ -187,9 +195,11 @@ option{
         align-content: space-between;
         height: 525px;
     }
+
     .slider-item{
         width: 49%;
     }
+
     .slider-text h3{
         font-size: 18px;
     }
@@ -220,7 +230,6 @@ option{
     }
 
     .slider-text h3:after{
-        width: 137%;
-        left: -44%;
+        width: 135%;
     }
 }

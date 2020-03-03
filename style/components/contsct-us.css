@@ -1,0 +1,117 @@
+#contact-us{
+    display: flex;
+    flex-direction: column;
+    margin-top: 14%;
+}
+
+#contact-us h2{
+    margin-bottom: 10%;
+}
+
+#contact-us form{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 325px;
+}
+
+#contact-us form input{
+    height: 40px;
+    width: 80%;
+    padding-left: 10px;
+    background: transparent;
+    border: 1px solid #454545;
+    font: 15px Ubuntu-Light;
+}
+
+#message{
+    height: 140px;
+    width: 80%;
+    padding-left: 10px;
+    padding-top: 10px;
+    background: transparent;
+    border: 1px solid #454545;
+    font: 15px Ubuntu-Light;
+}
+
+#submit{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 40px;
+    background: #b69b67;
+    border: 1px solid #b69b67;
+    font: 17px Ubuntu-Light;
+    font-weight: 800;
+    color: #454545;
+}
+
+#submit:hover{
+    background: transparent;
+    border: 1px solid #454545;
+    color: #b69b67;
+}
+
+.wrap-img{
+    position: relative;
+
+}
+.wrap-img img{
+    position: absolute;
+    width: 51%;
+    right: -12%;
+    top: -61px;
+    z-index: -16;
+    opacity: 0.5;
+}
+
+@media screen and (min-width: 576px) {
+    #contact-us{
+        align-items: center;
+    }
+
+    #contact-us form{
+        width: 70%;
+    }
+
+    .wrap-img{
+        width: 100%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #contact-us {
+        flex-wrap: wrap;
+        width: 48%;
+    }
+
+    #contact-us form{
+        align-items: flex-end;
+        width: 100%;
+        height: 400px;
+    }
+
+    #contact-us form input{
+        height: 50px;
+    }
+
+    #submit{
+        width: 38%;
+        align-self: center;
+        margin-left: 25%;
+    }
+
+    .wrap-img img{
+        width: 70%;
+        right: -29%;
+        top: -83px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    #contact-us{
+        margin-bottom: -9%;
+    }
+}

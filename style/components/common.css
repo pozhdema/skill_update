@@ -24,3 +24,7 @@ main h2 {
     letter-spacing: -0.5px;
     color: #b4b4b4;
 }
+#info{
+    display: flex;
+    flex-direction: column;
+}
