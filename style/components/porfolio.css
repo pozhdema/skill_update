@@ -54,11 +54,12 @@ option{
     left: 50%;
     transform: translate(-50%, -50%);
     width: 46%;
-    height: 20%;
+    height: 20%;/*relative height. why? do you have relative font size?*/
     background: #b69b67;
     border: 1px solid #b69b67;
     opacity: 0;
     transition: opacity .4s linear;
+    /*cursor: pointer - element is clickable*/
 }
 
 .slider-item button a{
@@ -118,7 +119,7 @@ option{
     letter-spacing: -1.8px;
 }
 
-.slider-text h3:after{
+.slider-text h3:after{/*::after*/
     content: "";
     position: absolute;
     width: 105%;
@@ -133,7 +134,7 @@ option{
 }
 
 .slider-text span{
-    font: 10px Ubuntu-MediumItalic;
+    font: 10px Ubuntu-MediumItalic;/*use only font weight; check all similar places*/
     text-align: right;
     opacity: 0.75;
 }
@@ -143,7 +144,7 @@ option{
 }
 
 .prev-next  span{
-    font: 10px Ubuntu-Medium;
+    font: 10px Ubuntu-Medium;/*here*/
 }
 
 .prev-next span:first-child,.prev-next span:last-child{
@@ -219,7 +220,7 @@ option{
     }
 
     .slider-item{
-        height: 215px;
+        height: 215px; /*fixed height only for mobile*/
     }
     .slider-item button a{
         font-size: 20px;
