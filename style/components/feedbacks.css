@@ -39,7 +39,7 @@
     color: #b69b67;
 }
 
-.feedbacks-item h3:after{
+.feedbacks-item h3::after{
     content: "";
     position: absolute;
     width: 100%;

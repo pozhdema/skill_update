@@ -30,9 +30,11 @@ option{
 
 .slider{
     width: 100%;
+    height: 1075px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    align-content: space-between;
 }
 
 .slider-item {
@@ -59,7 +61,7 @@ option{
     border: 1px solid #b69b67;
     opacity: 0;
     transition: opacity .4s linear;
-    /*cursor: pointer - element is clickable*/
+    cursor: pointer;
 }
 
 .slider-item button a{
@@ -119,7 +121,7 @@ option{
     letter-spacing: -1.8px;
 }
 
-.slider-text h3:after{/*::after*/
+.slider-text h3::after{
     content: "";
     position: absolute;
     width: 105%;
@@ -163,7 +165,6 @@ option{
     .slider{
         flex-direction: row;
         flex-wrap: wrap;
-        height: 1060px;
     }
 
     .slider-item{
@@ -181,7 +182,7 @@ option{
         width: 90%;
     }
 
-    .slider-text h3:after{
+    .slider-text h3::after{
         width: 145%;
         left: -54%;
     }
@@ -193,7 +194,6 @@ option{
 
 @media screen and (min-width: 768px) {
     .slider{
-        align-content: space-between;
         height: 525px;
     }
 
@@ -227,10 +227,7 @@ option{
     }
 
     .slider-text h3{
+        width: 97%;
         font-size: 26px;
-    }
-
-    .slider-text h3:after{
-        width: 135%;
     }
 }
