@@ -8,20 +8,20 @@
 select {
     position: relative;
     width: 185px;
+    padding: 7px 13px 7px 9px;
+    margin: 34px 0 55px;
     background-image: url(../../images/scroll.png);
     background-color: transparent;
     background-repeat: no-repeat;
     background-size: 18px;
     background-position: 96% center;
     border: 1px solid #454545;
-    padding: 7px 13px 7px 9px;
     font: 20px Ubuntu-Light;
     color: #b4b4b4;
     appearance: none;
     -moz-appearance: none;
     -webkit-appearance: none;
     outline: none;
-    margin: 34px 0 55px;
 }
 
 option{
@@ -30,88 +30,95 @@ option{
 
 .slider{
     width: 100%;
-    height: 1600px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 }
 
-.slider div {
-    height: 385px;
+.slider-item {
+    position: relative;
+    height: 256px;
     width: 100%;
     display: flex;
     flex-direction: column;
     background-size: cover;
     background-repeat: no-repeat;
-    opacity: 75%;
+    opacity: 0.75;
 }
 
-.slider > div {
-    position: relative;
-    /*padding-top: 100%;*/
-}
-
-.slider div button{
+.slider-item button{
     display: flex;
     justify-content: center;
-    font: 23px Ubuntu-Medium;
-    color: #303030;
-    border: 1px solid #b69b67;
-    background: #b69b67;
-    width: 46%;
-    height: 20%;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    width: 46%;
+    height: 20%;
+    background: #b69b67;
+    border: 1px solid #b69b67;
     opacity: 0;
     transition: opacity .4s linear;
 }
 
-.slider div:hover button{
+.slider-item button a{
+    text-decoration: none;
+    font: 15px Ubuntu-Medium;
+    color: #303030;
+}
+
+.slider-item:hover button{
     opacity: 1;
 }
 
-.slider div:hover .slider-text{
+.slider-item:hover .slider-text{
     opacity: 0;
 }
 
-.slider div:nth-child(1){
+.slider-item:hover{
+    opacity: 1;
+}
+
+.slider-item:nth-child(1){
      background-image: url("../../images/1-hover.png");
 }
 
-.slider div:nth-child(2){
+.slider-item:nth-child(2){
     background-image: url("../../images/3-hover.png");
 }
 
-.slider div:nth-child(3){
+.slider-item:nth-child(3){
     background-image: url("../../images/2-hover.png");
 }
 
-.slider div:nth-child(4){
+.slider-item:nth-child(4){
     background-image: url("../../images/4-hover.png");
 }
 
-.slider div .slider-text{
-    background: #b69b67;
-    width: 100%;
-    height: 192.5px;
-    margin-top: auto;
-    flex-direction: column;
-    color: #303030;
-    opacity: 1;
-    transition: opacity .4s linear;
+ .slider-text{
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+     position: absolute;
+     top: 0;
+     left: 0;
+     width: 100%;
+     height: 100%;
+     padding: 7% 8% 7%;
+     background: #b69b67;
+     color: #303030;
+     opacity: 1;
+     transition: opacity .4s linear;
 }
 
-.slider div .slider-text h3{
+.slider-text h3{
     font: 23px Ubuntu-Medium;
-    margin-left: 17px;
-    margin-top: 14px;
     letter-spacing: -1.8px;
     position: relative;
 }
 
-.slider div .slider-text h3 span{
+.slider-text h3:after{
+    content: "";
     border-bottom: 1px solid #303030;
     position: absolute;
     width: 80%;
@@ -119,19 +126,14 @@ option{
     bottom: -8%;
 }
 
-.slider div .slider-text p{
+.slider-text p{
     font: 12px Ubuntu-Medium;
-    margin-left: 19px;
-    margin-top: 58px;
-    line-height: 1.3;
     opacity: 0.9;
 }
 
-.slider div .slider-text span{
+.slider-text span{
     font: 10px Ubuntu-MediumItalic;
     text-align: right;
-    margin-top: 18px;
-    margin-right: 5%;
     opacity: 0.75;
 }
 
@@ -139,25 +141,41 @@ option{
     margin-top: 10px;
 }
 
-.prev-next  a{
+.prev-next  span{
     font: 10px Ubuntu-Medium;
-    text-decoration: none;
 }
 
-.prev-next a:first-child,.prev-next a:last-child{
+.prev-next span:first-child,.prev-next span:last-child{
     color: #454545;
 }
 
-.prev-next a:nth-child(3){
+.prev-next span:nth-child(3){
     color: #b69b67;
 }
 
-.prev-next a:nth-child(2n){
+.prev-next span:nth-child(2n){
     color: #b4b4b4;
 }
 
 @media screen and (min-width: 576px) {
-
+    .slider{
+        flex-direction: row;
+        flex-wrap: wrap;
+        height: 1060px;
+    }
+    .slider-item{
+        flex-direction: row;
+        width: 100%;
+    }
+    .slider-text{
+        width: 50%;
+        left: 50%;
+        padding: 3% 4% 3%;
+    }
+    .slider-text h3:after{
+        width: 150%;
+        left: -54%;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -166,30 +184,14 @@ option{
 
 @media screen and (min-width: 768px) {
     .slider{
-        flex-wrap: wrap;
-        justify-content: space-between;
         align-content: space-between;
-        height: 400px;
+        height: 525px;
     }
-
-    .slider div{
-        height: 180px;
-        width: 48%;
-        flex-wrap: wrap;
+    .slider-item{
+        width: 49%;
     }
-
-    .slider div .slider-text {
-        width: 50%;
-        height: 214.5px;
-        margin-left: auto;
-    }
-
-    .slider div .slider-text h3{
-        font-size: 17px;
-    }
-
-    .slider div .slider-text p{
-        margin-top: 28px;
+    .slider-text h3{
+        font-size: 18px;
     }
 }
 
@@ -203,34 +205,22 @@ option{
     }
 
     .slider{
-        height: 475px;
-        flex-direction: row;
+        height: 450px;
     }
 
-    .slider div {
+    .slider-item{
         height: 215px;
-        flex-direction: row;
+    }
+    .slider-item button a{
+        font-size: 20px;
     }
 
-    .slider div .slider-text {
-        width: 47%;
-    }
-
-    .slider div .slider-text h3{
+    .slider-text h3{
         font-size: 26px;
     }
 
-    .slider div .slider-text h3 span{
-        width: 105%;
-        left: -38%;
+    .slider-text h3:after{
+        width: 137%;
+        left: -44%;
     }
-
-    .slider div .slider-text p{
-        margin-top: 58px;
-    }
-}
-
-.slider > div {
-    height: calc(50% - 10px);
-    width: calc(50% - 10px);
 }
