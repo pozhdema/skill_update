@@ -1,23 +1,23 @@
-#feedbacks {
-    display: flex;
+#feedbacks{
+    display: flex;/*you really need here flex?*/
     flex-direction: column;
 }
 
-.feedbacks-item {
-    display: flex;
+.feedbacks-item{/*better name - comment or something similar*/
+    display: flex;/*you can use it without flex*/
     flex-direction: column;
     align-items: center;
-    height: 256px;
-    width: 100%;
+    height: 256px;/*why do you use height? for intents use margin/padding*/
+    width: 100%;/*why do you use width for div?*/
     margin-bottom: 25px;
 }
 
-.people {
-    display: flex;
-    flex-direction: column;
+.people{
+    display: flex;/*use flex only for it container*/
+    flex-direction: column;/*column only for mobile - use @media: max-width*/
     align-items: center;
-    justify-content: space-evenly;
-    width: 100%;
+    justify-content: space-evenly;/* maybe space-between?*/
+    width: 100%;/*default width?*/
     height: 100%;
 }
 
@@ -31,13 +31,13 @@
     position: relative;
     display: flex;
     justify-content: center;
-    width: 100%;
+    width: 100%;/*what default width for h1-6?*/
     font-size: 23px;
     font-weight: 300;
     color: #b69b67;
 }
 
-.feedbacks-item h3::after {
+.feedbacks-item h3::after{/*use border-top for h3 instead*/
     content: "";
     position: absolute;
     width: 100%;
@@ -89,7 +89,7 @@
         flex-direction: row;
         flex-wrap: wrap;
         justify-content: center;
-        width: 48%;
+        width: 48%;/*why 48%?*/
     }
 
     .feedbacks-item {
