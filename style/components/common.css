@@ -8,7 +8,9 @@
 
 body{
     background: #2C2C2C;
-    font: 24px Ubuntu-Light;
+    font-size: 24px ;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
     color: #b4b4b4;
     padding: 0 10% 100px;
 }
@@ -19,12 +21,15 @@ body{
 }
 
 main h2 {
-    font: 30px PlayfairDisplaySC-Bold;
+    font-size: 30px;
+    font-family: 'PlayfairDisplaySC', sans-serif;
+    font-weight: 700;
+    color: #b4b4b4;
     text-align: center;
     letter-spacing: -0.5px;
-    color: #b4b4b4;
 }
 #info{
     display: flex;
     flex-direction: column;
+    margin-top: 7%;
 }

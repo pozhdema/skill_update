@@ -5,7 +5,7 @@
 .services {
     display: flex;
     flex-direction: column;
-    margin-top: 30px;
+    margin-top: 39px;
 }
 
 .right-services{
@@ -90,7 +90,7 @@
     }
 
     .services-text {
-        margin-top: 6%;
+        margin-top: 5.4%;
     }
     .list li{
         margin-bottom: 52px;

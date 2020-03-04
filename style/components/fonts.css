@@ -2,47 +2,40 @@
 @font-face {
     font-family: 'Ubuntu';
     src: url('../../fonts/ubuntu/Ubuntu-Light.ttf');
-    font-weight: 300; /*400, 500, 700*/
-    font-style: normal; /* can be italic*/
-}
-
-@font-face{
-    font-family: Ubuntu-Light;
-    src: url('../../fonts/ubuntu/Ubuntu-Light.ttf');
     font-weight: 300;
     font-style: normal;
 }
 
-@font-face{
-    font-family: Ubuntu-Medium;
+@font-face {
+    font-family: 'Ubuntu';
     src: url('../../fonts/ubuntu/Ubuntu-Medium.ttf');
     font-weight: 500;
     font-style: normal;
 }
 
-@font-face{
-    font-family: Ubuntu-MediumItalic;
+@font-face {
+    font-family: 'Ubuntu';
     src: url('../../fonts/ubuntu/Ubuntu-MediumItalic.ttf');
     font-weight: 500;
     font-style: italic;
 }
 
 @font-face {
-    font-family: Ubuntu-Regular;
+    font-family: 'Ubuntu';
     src: url('../../fonts/ubuntu/Ubuntu-Regular.ttf');
     font-weight: 400;
     font-style: normal;
 }
 
-@font-face{
-    font-family: PlayfairDisplaySC-Bold;
+@font-face {
+    font-family: 'PlayfairDisplaySC';
     src: url('../../fonts/playfairsc/PlayfairDisplaySC-Bold.ttf');
     font-weight: 700;
     font-style: normal;
 }
 
-@font-face{
-    font-family: PlayfairDisplaySC-Regular;
+@font-face {
+    font-family: 'PlayfairDisplaySC';
     src: url('../../fonts/playfairsc/PlayfairDisplaySC-Regular.ttf');
     font-weight: 400;
     font-style: normal;

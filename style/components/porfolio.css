@@ -16,12 +16,14 @@ select {
     background-size: 18px;
     background-position: 96% center;
     border: 1px solid #454545;
-    font: 20px Ubuntu-Light;
+    font-size: 20px;
+    font-weight: 300;
     color: #b4b4b4;
     appearance: none;
     -moz-appearance: none;
     -webkit-appearance: none;
     outline: none;
+    cursor: pointer;
 }
 
 option{
@@ -30,7 +32,6 @@ option{
 
 .slider{
     width: 100%;
-    height: 1075px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -39,10 +40,11 @@ option{
 
 .slider-item {
     position: relative;
-    height: 256px;
-    width: 100%;
     display: flex;
     flex-direction: column;
+    width: 100%;
+    padding-top: 100%;
+    margin-bottom: 20px;
     background-size: cover;
     background-repeat: no-repeat;
     opacity: 0.75;
@@ -61,11 +63,13 @@ option{
     opacity: 0;
     transition: opacity .4s linear;
     cursor: pointer;
+    z-index: 1;
 }
 
 .slider-item button a{
     text-decoration: none;
-    font: 15px Ubuntu-Medium;
+    font-size: 15px;
+    font-weight: 500;
     color: #303030;
 }
 
@@ -113,39 +117,43 @@ option{
      transition: opacity .4s linear;
 }
 
-.slider-text h3{
+.slider-text h3 span{
     position: relative;
-    width: 80%;
-    font: 23px Ubuntu-Medium;
+    font-size: 6.37vw;
+    font-weight: 500;
     letter-spacing: -1.8px;
 }
 
-.slider-text h3::after{
+.slider-text h3 span::after{
     content: "";
     position: absolute;
-    width: 105%;
-    left: -12%;
+    left: -20px;
+    right: 0;
     bottom: -8%;
     border-bottom: 1px solid #303030;
 }
 
 .slider-text p{
-    font: 12px Ubuntu-Medium;
+    font-size: 3.41vw;
+    font-weight: 500;
     opacity: 0.9;
 }
 
-.slider-text span{
-    font: 10px Ubuntu-MediumItalic;/*use only font weight; check all similar places*/
+.slider-text i{
+    font-size: 2.9vw;
+    font-weight: 500;
     text-align: right;
     opacity: 0.75;
 }
 
 .prev-next{
-    margin-top: 10px;
+    margin-top: 27px;
 }
 
 .prev-next  span{
-    font: 10px Ubuntu-Medium;/*here*/
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
 }
 
 .prev-next span:first-child,.prev-next span:last-child{
@@ -177,31 +185,46 @@ option{
         padding: 3% 4% 3%;
     }
 
-    .slider-text h3{
-        width: 90%;
+    .slider-text h3 span{
+        font-size: 25px;
     }
 
-    .slider-text h3::after{
-        width: 145%;
-        left: -54%;
+
+    .slider-text p{
+        font-size: 20px;
     }
-}
 
-@media screen and (max-width: 767px) {
-
+    .slider-text i{
+        font-size: 15px;
+    }
 }
 
 @media screen and (min-width: 768px) {
     .slider{
-        height: 525px;
+        max-height: 450px;
+        height: 50vw;
     }
 
     .slider-item{
         width: 49%;
+        height: calc(50% - 7px);
+        padding-top: 0;
     }
 
-    .slider-text h3{
+    .slider-text h3 span{
         font-size: 18px;
+    }
+
+    .slider-text h3 span::after{
+        left: -120px;
+    }
+
+    .slider-text p{
+        font-size: 12px;
+    }
+
+    .slider-text i{
+        font-size: 10px;
     }
 }
 
@@ -214,14 +237,6 @@ option{
         font-size: 24px;
     }
 
-    .slider{
-        height: 450px;
-    }
-
-    .slider-item{
-        height: 215px; /*fixed height only for mobile*/
-    }
-
     .slider-item button{
         padding: 10px;
     }
@@ -230,8 +245,7 @@ option{
         font-size: 20px;
     }
 
-    .slider-text h3{
-        width: 97%;
+    .slider-text h3 span{
         font-size: 26px;
     }
 }

@@ -8,7 +8,8 @@ header {
 
 h1 {
     font-size: 34px;
-    font-family:  "PlayfairDisplaySC-Regular", sans-serif;
+    font-family:  "PlayfairDisplaySC", sans-serif;
+    font-weight: 400;
     color: #b69b67;
     border-top: 1px solid #b69b67;
     line-height: 1.2;
@@ -17,7 +18,9 @@ h1 {
 }
 
 h1 span {
-    font: 20px Ubuntu-Light;
+    font-size: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 300;
     color: #b4b4b4;
     position: absolute;
     bottom: -62%;
@@ -43,6 +46,7 @@ h1 span {
     align-self: center;
     font-size: 13px;
     color: #454545;
+    cursor: pointer;
 }
 
 .scroll::after {
