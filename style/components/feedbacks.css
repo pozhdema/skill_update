@@ -1,81 +1,64 @@
-#feedbacks{
-    display: flex;/*you really need here flex?*/
-    flex-direction: column;
+.feedbacks-item { /*better name - comment or something similar*/
+    margin: 25px 0;
 }
 
-.feedbacks-item{/*better name - comment or something similar*/
-    display: flex;/*you can use it without flex*/
-    flex-direction: column;
+.content {
+    display: flex; /*use flex only for it container*/
+    flex-direction: column; /*column only for mobile - use @media: max-width*/
     align-items: center;
-    height: 256px;/*why do you use height? for intents use margin/padding*/
-    width: 100%;/*why do you use width for div?*/
-    margin-bottom: 25px;
-}
-
-.people{
-    display: flex;/*use flex only for it container*/
-    flex-direction: column;/*column only for mobile - use @media: max-width*/
-    align-items: center;
-    justify-content: space-evenly;/* maybe space-between?*/
-    width: 100%;/*default width?*/
+    justify-content: space-between;
     height: 100%;
+    padding-bottom: 30px;
 }
 
-.people p {
+.content p {
+    padding-top: 20px;
     font-size: 17px;
     text-align: justify;
     letter-spacing: 0.3px;
 }
 
-.feedbacks-item h3 {
+.name-feedbacks {
     position: relative;
     display: flex;
     justify-content: center;
-    width: 100%;/*what default width for h1-6?*/
-    font-size: 23px;
+    width: 100%;
+    font-size: 17px;
     font-weight: 300;
     color: #b69b67;
 }
 
-.feedbacks-item h3::after{/*use border-top for h3 instead*/
+.name-feedbacks::after {
     content: "";
     position: absolute;
     width: 100%;
-    margin-top: -7px;
+    margin-top: -15px;
     border-bottom: 1px solid #b69b67;
 }
 
-#feedbacks span {
+.more-info {
     display: flex;
-    align-items: flex-end;
     justify-content: center;
-    margin-top: -10px;
     margin-bottom: 20px;
     font-size: 12px;
     cursor: pointer;
 }
 
-#feedbacks span:hover {
+.more-info:hover {
     color: #b69b67;
 }
 
 @media screen and (min-width: 576px) {
-    .feedbacks-item {
-        justify-content: space-around;
-        height: 170px;
-    }
-
-    .people {
+    .content {
         flex-direction: row;
-        height: 55%;
     }
 
-    .people p {
+    .content p {
         font-size: 23px;
-        padding-left: 17px;;
+        padding-left: 17px;
     }
 
-    .feedbacks-item h3 {
+    .name-feedbacks {
         justify-content: flex-end;
     }
 }
@@ -86,39 +69,44 @@
     }
 
     #feedbacks {
-        flex-direction: row;
+        display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        width: 48%;/*why 48%?*/
+        width: 48%; /*why 48%?*/
     }
 
-    .feedbacks-item {
-        height: 200px;
-    }
-
-    .people p {
+    .content p {
         font-size: 20px;
+    }
+
+    .more-info {
+        margin-top: 20px;
     }
 }
 
 @media screen and (min-width: 1200px) {
-    #feedbacks {
-        height: 709px;
+    .feedbacks-item{
+        margin-top: -13px;
+        margin-bottom: 69px;
     }
 
-    .feedbacks-item {
-        height: 184px;
+    .content{
+        padding-bottom: 26px;
     }
 
-    .people img {
+    .content img {
         width: 13%;
+        margin-top: 20px;
     }
 
-    .people p {
+    .content p {
+        font-size: 23px;
+    }
+    .name-feedbacks{
         font-size: 23px;
     }
 
-    .feedbacks-item h3::after {
-        margin-top: -13px;
+    .name-feedbacks::after {
+        margin-top: -9px;
     }
 }

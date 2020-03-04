@@ -33,9 +33,8 @@
 
 #message {
     height: 237px;
-    resize: none;/*if you want to disable resizing */
-    /*resize: vertical;*/ /*or you can use only vertical/horizontal resizing*/
-    width: 100%; /*now not need to use important*/
+    resize: none;
+    width: 100%;
     padding-left: 10px;
     padding-top: 10px;
     margin-bottom: 20px;
@@ -46,14 +45,12 @@
     outline: none;
 }
 
-
 /*use only padding without flex and dimensions*/
-
 #submit {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 50%;/*there is no need for button make relative width */
+    width: 180px;
     height: 57px;
     background: #b69b67;
     border: 1px solid #b69b67;
@@ -61,22 +58,13 @@
     font-weight: 500;
     color: #454545;
     cursor: pointer;
+    transition:color .4s linear;
 }
 
 #submit:hover {
     background: transparent;
     border: 1px solid #454545;
     color: #b69b67;
-    /*add transition*/
-}
-
-#contact-us img {
-    position: absolute;
-    width: auto;
-    bottom: 0;
-    right: 0;
-    z-index: -16;/*what it means?*/
-    opacity: 0.25;
 }
 
 @media screen and (min-width: 576px) {
@@ -91,7 +79,7 @@
 }
 
 @media screen and (min-width: 768px) {
-    #contact-us{
+    #contact-us {
         padding-bottom: 170px;
         background-position: right 432px;
         background-size: 300px;
@@ -113,11 +101,6 @@
     #contact-us form input {
         height: 55px;
     }
-
-    #submit {
-        width: 44%;
-    }
-
 }
 
 @media screen and (min-width: 1200px) {
