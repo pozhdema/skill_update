@@ -8,7 +8,7 @@
     margin-top: 39px;
 }
 
-.right-services{
+.right-services {
     display: flex;
     flex-direction: column;
 }
@@ -30,13 +30,13 @@
     font-size: 20px
 }
 
-.list li{
+.list li {
     margin-bottom: 10px;
 }
 
 .list li a {
     text-decoration: none;
-    color:  #b4b4b4;;
+    color: #b4b4b4;;
 }
 
 .list li a:hover {
@@ -77,9 +77,10 @@
 }
 
 @media screen and (min-width: 768px) {
-    #services{
+    #services {
         margin-top: 13.8%;
     }
+
     .services {
         flex-direction: row;
     }
@@ -92,7 +93,8 @@
     .services-text {
         margin-top: 5.4%;
     }
-    .list li{
+
+    .list li {
         margin-bottom: 52px;
     }
 }
@@ -102,21 +104,25 @@
 }
 
 @media screen and (min-width: 1200px) {
-    main h2{
+    main h2 {
         font-size: 45px;
     }
-    .name-list{
+
+    .name-list {
         font-size: 45px;
         margin-top: 4%;
         margin-bottom: 12%;
     }
-    .list{
+
+    .list {
         font-size: 24px;
     }
+
     .services-text {
         align-self: flex-start;
     }
-    .laptop{
+
+    .laptop {
         margin-left: -11.5%;
     }
 }

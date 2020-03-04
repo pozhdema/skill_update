@@ -1,20 +1,25 @@
-#contact-us{
+#contact-us {
     position: relative;
     display: flex;
     flex-direction: column;
+    padding-bottom: 70px;
+    background-image: url(../../images/form2.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: 200px;
 }
 
-#contact-us h2{
+#contact-us h2 {
     margin-bottom: 5%;
 }
 
-#contact-us form{
+#contact-us form {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-#contact-us form input{
+#contact-us form input {
     height: 40px;
     width: 100%;
     padding-left: 10px;
@@ -26,9 +31,9 @@
     outline: none;
 }
 
-#message{
+#message {
     height: 237px;
-    width: 100%!important;
+    width: 100% !important;
     padding-left: 10px;
     padding-top: 10px;
     margin-bottom: 20px;
@@ -39,7 +44,7 @@
     outline: none;
 }
 
-#submit{
+#submit {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53,13 +58,13 @@
     cursor: pointer;
 }
 
-#submit:hover{
+#submit:hover {
     background: transparent;
     border: 1px solid #454545;
     color: #b69b67;
 }
 
-#contact-us img{
+#contact-us img {
     position: absolute;
     width: auto;
     bottom: 0;
@@ -69,33 +74,49 @@
 }
 
 @media screen and (min-width: 576px) {
-    #contact-us{
+    #contact-us {
         align-items: center;
     }
 
-    #contact-us form{
+    #contact-us form {
         width: 70%;
     }
 
+}
+
+@media screen and (min-width: 768px) {
+    #contact-us{
+        padding-bottom: 170px;
+        background-position: right 432px;
+        background-size: 300px;
+    }
 }
 
 @media screen and (min-width: 992px) {
     #contact-us {
         flex-wrap: wrap;
         width: 50%;
+        padding-bottom: 60px;
+        background-position: right 454px;
     }
 
-    #contact-us form{
+    #contact-us form {
         width: 68%;
     }
 
-    #contact-us form input{
+    #contact-us form input {
         height: 55px;
     }
 
-    #submit{
+    #submit {
         width: 44%;
     }
 
+}
+
+@media screen and (min-width: 1200px) {
+    #contact-us {
+        background-position: right 482px;
+    }
 }
 
