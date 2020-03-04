@@ -4,15 +4,10 @@
 
 .content {
     display: flex; /*use flex only for it container*/
-    flex-direction: column; /*column only for mobile - use @media: max-width*/
-    align-items: center;
-    justify-content: space-between;
-    height: 100%;
     padding-bottom: 30px;
 }
 
 .content p {
-    padding-top: 20px;
     font-size: 17px;
     text-align: justify;
     letter-spacing: 0.3px;
@@ -24,16 +19,10 @@
     justify-content: center;
     width: 100%;
     font-size: 17px;
+    line-height: 1.5;
     font-weight: 300;
     color: #b69b67;
-}
-
-.name-feedbacks::after {
-    content: "";
-    position: absolute;
-    width: 100%;
-    margin-top: -15px;
-    border-bottom: 1px solid #b69b67;
+    border-top: 1px solid;
 }
 
 .more-info {
@@ -48,11 +37,15 @@
     color: #b69b67;
 }
 
-@media screen and (min-width: 576px) {
+@media screen and (max-width: 575px) {
     .content {
-        flex-direction: row;
+        flex-direction: column; /*column only for mobile - use @media: max-width*/
+        align-items: center;
     }
+}
 
+
+@media screen and (min-width: 576px) {
     .content p {
         font-size: 23px;
         padding-left: 17px;
@@ -62,6 +55,7 @@
         justify-content: flex-end;
     }
 }
+
 
 @media screen and (min-width: 992px) {
     #info {
@@ -85,28 +79,24 @@
 }
 
 @media screen and (min-width: 1200px) {
-    .feedbacks-item{
-        margin-top: -13px;
+    .feedbacks-item {
         margin-bottom: 69px;
     }
 
-    .content{
+    .content {
         padding-bottom: 26px;
     }
 
     .content img {
-        width: 13%;
-        margin-top: 20px;
+        width: 15%;
     }
 
     .content p {
         font-size: 23px;
     }
-    .name-feedbacks{
+
+    .name-feedbacks {
         font-size: 23px;
     }
 
-    .name-feedbacks::after {
-        margin-top: -9px;
-    }
 }
