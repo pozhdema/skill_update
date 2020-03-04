@@ -22,6 +22,8 @@
     background: transparent;
     border: 1px solid #454545;
     font-size: 15px;
+    color: #b4b4b4;
+    outline: none;
 }
 
 #message{
@@ -32,9 +34,11 @@
     padding-left: 10px;
     padding-top: 10px;
     margin-bottom: 20px;
-    background: transparent;
     border: 1px solid #454545;
     font-size: 15px;
+    color: #b4b4b4;
+    background: #2C2C2C;
+    outline: none;
 }
 
 
