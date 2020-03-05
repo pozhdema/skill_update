@@ -61,10 +61,8 @@
 .laptop {
     width: 78%;
     margin-top: 9%;
-    opacity: 50%;
     align-self: center;
 }
-
 
 @media screen and (min-width: 576px) {
 

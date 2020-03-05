@@ -28,14 +28,14 @@ h1 span {
 }
 
 .lamp {
-    width: 17.5%;
+    width: 13.5%;
     margin-top: 30%;
-    opacity: 70%;
     min-width: 100px;
 }
 
 .caption {
     font-size: 23px;
+    font-weight: 300;
     color: #b7a075;
     margin: 6% 0 10%;
     letter-spacing: -0.7px;
@@ -107,7 +107,6 @@ h1 span {
 
 @media screen and (min-width: 1200px) {
     .caption {
-        font-weight: 500;
         font-size: 45px;
     }
 

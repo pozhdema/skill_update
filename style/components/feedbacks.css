@@ -1,5 +1,13 @@
-.feedbacks-item { /*better name - comment or something similar*/
-    margin: 25px 0;
+.feedback {
+    margin-bottom: 40px;
+}
+
+.feedback:nth-child(2) {
+    margin-top: 25px;
+}
+
+.feedback:nth-child(4) {
+    margin-bottom: 32px;
 }
 
 .content {
@@ -13,7 +21,7 @@
     letter-spacing: 0.3px;
 }
 
-.name-feedbacks {
+.feedback-name {
     position: relative;
     display: flex;
     justify-content: center;
@@ -51,7 +59,7 @@
         padding-left: 17px;
     }
 
-    .name-feedbacks {
+    .feedback-name {
         justify-content: flex-end;
     }
 }
@@ -66,25 +74,22 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        width: 48%; /*why 48%?*/
+        width: 50%;
+        padding-right: 23px;
     }
 
     .content p {
         font-size: 20px;
     }
-
-    .more-info {
-        margin-top: 20px;
-    }
 }
 
 @media screen and (min-width: 1200px) {
-    .feedbacks-item {
-        margin-bottom: 69px;
+    .feedback {
+        margin-bottom: 68px;
     }
 
     .content {
-        padding-bottom: 26px;
+        padding-bottom: 19px;
     }
 
     .content img {
@@ -95,8 +100,7 @@
         font-size: 23px;
     }
 
-    .name-feedbacks {
+    .feedback-name {
         font-size: 23px;
     }
-
 }
