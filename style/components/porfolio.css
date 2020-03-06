@@ -30,6 +30,10 @@ option {
     background-color: #2C2C2C;
 }
 
+.slider-wrap {
+    display: contents;
+}
+
 .slider {
     width: 100%;
     display: none;
@@ -168,6 +172,7 @@ option {
         width: 100%;
         height: calc(24.5% - 7px);
         padding-top: 0;
+        margin-bottom: 0;
     }
 
     .slider-text {
@@ -200,7 +205,7 @@ option {
     }
 
     .slider-item {
-        width: 49%;
+        width: calc(50% - 7px);
         height: calc(50% - 7px);
     }
 }

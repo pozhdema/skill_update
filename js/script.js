@@ -30,6 +30,10 @@ const sliderData = [
     },
 ]
 
+let prev=document.getElementById("prev");
+let next=document.getElementById("next");
+let now=document.getElementById("now");
+
 let activePage = 1; // first 4 items
 
 const sliderWrapper = document.getElementsByClassName('slider-wrap')[0]
@@ -57,8 +61,24 @@ for (let i = 0; i < 50; i++) {
             sliderItem(sliderData[index])
         )
     }
-    sliderWrapper.append(newSlider)
+
+    sliderWrapper.append(newSlider);
 }
+
+
+prev.addEventListener("click", function (activePage) {
+    let sliderActive=document.querySelector(".slider.active");
+    sliderActive.classList.remove("active");
+    sliderActive.previousSibling.classList.add("active");
+});
+
+next.addEventListener("click", function (activePage) {
+    let sliderActive=document.querySelector(".slider.active");
+    sliderActive.classList.remove("active");
+    sliderActive.nextElementSibling.classList.add("active");
+});
+
+now.innerHTML = (`${activePage}`);
 
 // sliderWrapper.parentElement.replaceChild(newSlider, slider);
 /*append items*/
