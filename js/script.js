@@ -1,4 +1,5 @@
 /*generate items*/
+
 const sliderData = [
     {
         button: 'SEE FULL PROJECT',
@@ -30,13 +31,52 @@ const sliderData = [
     },
 ]
 
-let prev=document.getElementById("prev");
-let next=document.getElementById("next");
-let now=document.getElementById("now");
+const sliderWrapper = document.getElementsByClassName('slider-wrap')[0];
+
+let prev = document.getElementById("prev");
+let next = document.getElementById("next");
+let now = document.getElementById("now");
+let first = document.getElementById("first-page");
+let last = document.getElementById("last-page");
 
 let activePage = 1; // first 4 items
+let activeSlide;
+let slideList = [];
+const pages = 50;
 
-const sliderWrapper = document.getElementsByClassName('slider-wrap')[0]
+last.innerText = pages;
+
+
+if (str) {
+    console.log('hello!')
+}
+
+const incrementPage = () => {
+    if (activePage < pages) {
+        activePage++;
+        now.innerText = activePage;
+        changeActiveSlide();
+    }
+};
+
+const decrementPage = () => {
+    if (activePage > 1) {
+        activePage--;
+        now.innerText = activePage;
+        changeActiveSlide();
+    }
+};
+
+const setPage = (page) => {
+    activePage = page;
+    now.innerText = activePage
+};
+
+const changeActiveSlide = () => {
+    activeSlide.classList.remove("active");
+    activeSlide = slideList[activePage - 1];
+    activeSlide.classList.add("active");
+};
 
 const sliderItem = ({img, button, h3, p, i}) => (
     `
@@ -50,42 +90,47 @@ const sliderItem = ({img, button, h3, p, i}) => (
         </div>
 `);
 
-for (let i = 0; i < 50; i++) {
-    const newSlider = document.createElement('div');
-    newSlider.className = activePage === i + 1 ? 'slider active' : 'slider';
+for (let i = 0; i < pages; i++) {
+    const newSlide = document.createElement('div');
+    if (activePage === i + 1) {
+        newSlide.className = 'slide active';
+        activeSlide = newSlide
+    } else {
+        newSlide.className = 'slide'
+    }
+
 
     for (let j = 0; j < 4; j++) {
         const index = Math.floor(Math.random() * 4);
-        newSlider.insertAdjacentHTML(
+        newSlide.insertAdjacentHTML(
             'beforeend',
             sliderItem(sliderData[index])
         )
     }
 
-    sliderWrapper.append(newSlider);
+    slideList.push(newSlide);
+    sliderWrapper.append(newSlide);
 }
 
-
-prev.addEventListener("click", function (activePage) {
-    let sliderActive=document.querySelector(".slider.active");
-    sliderActive.classList.remove("active");
-    sliderActive.previousSibling.classList.add("active");
+prev.addEventListener("click", function (event) {
+    decrementPage();
 });
 
-next.addEventListener("click", function (activePage) {
-    let sliderActive=document.querySelector(".slider.active");
-    sliderActive.classList.remove("active");
-    sliderActive.nextElementSibling.classList.add("active");
+next.addEventListener("click", function (event) {
+    incrementPage();
+});
+
+first.addEventListener("click", function (event) {
+    setPage(1);
+    changeActiveSlide();
+});
+
+last.addEventListener("click", function (event) {
+    setPage(pages);
+    changeActiveSlide();
 });
 
 now.innerHTML = (`${activePage}`);
 
-// sliderWrapper.parentElement.replaceChild(newSlider, slider);
-/*append items*/
 
-/*Pagination*/
-
-/*find: Prev, Next*/
-/*add event listeners*/
-/*increment/decrement activePage*/
 

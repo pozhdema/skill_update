@@ -31,19 +31,35 @@ option {
 }
 
 .slider-wrap {
-    display: contents;
+    position: relative;
+    width: 100%;
+    height: 450px;
+    overflow: hidden;
 }
 
-.slider {
-    width: 100%;
-    display: none;
+.slide {
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-content: space-between;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    /*padding: 0 25px;*/
+    transition: opacity 1s linear;
+    /*transition: transform 1s linear;*/
+    /*transform: translateX(-100%);*/
 }
 
-.slider.active {
-    display: flex;
+.slide.active {
+    opacity: 1;
+    /*transform: translateX(0);*/
+}
+
+.slide.active ~ .slide {
+    /*transform: translateX(100%);*/
 }
 
 .slider-item {
@@ -138,30 +154,30 @@ option {
     opacity: 0.75;
 }
 
-.prev-next {
+.pagination {
     margin-top: 27px;
 }
 
-.prev-next span {
+.pagination span {
     font-size: 12px;
     font-weight: 500;
     cursor: pointer;
 }
 
-.prev-next span:first-child, .prev-next span:last-child {
+.pagination span:first-child, .pagination span:last-child {
     color: #454545;
 }
 
-.prev-next span:nth-child(3) {
+.pagination span:nth-child(3) {
     color: #b69b67;
 }
 
-.prev-next span:nth-child(2n) {
+.pagination span:nth-child(2n) {
     color: #b4b4b4;
 }
 
 @media screen and (min-width: 576px) {
-    .slider {
+    .slide {
         flex-direction: row;
         flex-wrap: wrap;
         height: 900px;
@@ -199,7 +215,7 @@ option {
 }
 
 @media screen and (min-width: 768px) {
-    .slider {
+    .slide {
         max-height: 450px;
         height: 50vw;
     }
