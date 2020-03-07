@@ -46,11 +46,6 @@ const pages = 50;
 
 last.innerText = pages;
 
-
-if (str) {
-    console.log('hello!')
-}
-
 const incrementPage = () => {
     if (activePage < pages) {
         activePage++;
