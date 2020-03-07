@@ -55,6 +55,7 @@ option {
 
 .slide.active {
     opacity: 1;
+    z-index: 1;
     /*transform: translateX(0);*/
 }
 
@@ -99,14 +100,11 @@ option {
 
 .slider-item:hover button {
     opacity: 1;
+    opacity: 1;
 }
 
 .slider-item:hover .slider-text {
     opacity: 0;
-}
-
-.slider-item:hover {
-    opacity: 1;
 }
 
 .slider-text {
