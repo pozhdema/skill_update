@@ -162,14 +162,20 @@ option {
     font-size: 12px;
     font-weight: 500;
     cursor: pointer;
+    user-select: none
 }
 
 .pagination span:first-child, .pagination span:last-child {
     color: #454545;
 }
 
+.pagination span:first-child:hover, .pagination span:last-child:hover {
+    color: #b69b67;
+}
+
 .pagination span:nth-child(3) {
     color: #b69b67;
+    cursor: none;
 }
 
 .pagination span:nth-child(2n) {

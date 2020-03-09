@@ -29,54 +29,43 @@ const sliderData = [
         i: 'web design',
         img: 'images/4-hover.png'
     },
-]
+];
 
 const sliderWrapper = document.getElementsByClassName('slider-wrap')[0];
 
-let prev = document.getElementById("prev");
-let next = document.getElementById("next");
 let now = document.getElementById("now");
-let first = document.getElementById("first-page");
 let last = document.getElementById("last-page");
+let pagination = document.getElementsByClassName("pagination")[0];
 
 let activePage = 1; // first 4 items
-let activeSlide;
 let slideList = [];
 const pages = 50;
 
 last.innerText = pages;
 
 
-if (str) {
-    console.log('hello!')
-}
-
 const incrementPage = () => {
     if (activePage < pages) {
-        activePage++;
-        now.innerText = activePage;
-        changeActiveSlide();
+        changeActiveSlide(activePage + 1);
     }
 };
 
 const decrementPage = () => {
     if (activePage > 1) {
-        activePage--;
-        now.innerText = activePage;
-        changeActiveSlide();
+        changeActiveSlide(activePage - 1);
     }
 };
 
-const setPage = (page) => {
-    activePage = page;
-    now.innerText = activePage
+const changeActiveSlide = (newPage) => {
+    if (activePage !== newPage) {
+        slideList[activePage - 1].classList.remove("active");
+        slideList[newPage - 1].classList.add("active");
+        activePage = newPage;
+        now.innerText = activePage;
+    }
 };
 
-const changeActiveSlide = () => {
-    activeSlide.classList.remove("active");
-    activeSlide = slideList[activePage - 1];
-    activeSlide.classList.add("active");
-};
+const fragment = document.createDocumentFragment();
 
 const sliderItem = ({img, button, h3, p, i}) => (
     `
@@ -93,12 +82,10 @@ const sliderItem = ({img, button, h3, p, i}) => (
 for (let i = 0; i < pages; i++) {
     const newSlide = document.createElement('div');
     if (activePage === i + 1) {
-        newSlide.className = 'slide active';
-        activeSlide = newSlide
+        newSlide.className = "slide active";
     } else {
-        newSlide.className = 'slide'
+        newSlide.className = 'slide';
     }
-
 
     for (let j = 0; j < 4; j++) {
         const index = Math.floor(Math.random() * 4);
@@ -109,28 +96,21 @@ for (let i = 0; i < pages; i++) {
     }
 
     slideList.push(newSlide);
-    sliderWrapper.append(newSlide);
+    fragment.append(newSlide);
+    sliderWrapper.append(fragment);
 }
 
-prev.addEventListener("click", function (event) {
-    decrementPage();
+pagination.addEventListener("click", function (event) {
+    if (event.target.id === 'prev') {
+        decrementPage();
+    } else if (event.target.id === 'next') {
+        incrementPage();
+    } else if (event.target.id === 'first-page') {
+        changeActiveSlide(1);
+    } else if (event.target.id === 'last-page') {
+        changeActiveSlide(pages);
+    }
 });
-
-next.addEventListener("click", function (event) {
-    incrementPage();
-});
-
-first.addEventListener("click", function (event) {
-    setPage(1);
-    changeActiveSlide();
-});
-
-last.addEventListener("click", function (event) {
-    setPage(pages);
-    changeActiveSlide();
-});
-
-now.innerHTML = (`${activePage}`);
 
 
 
