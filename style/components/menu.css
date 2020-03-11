@@ -7,32 +7,65 @@
     width: 50px;
     height: 50px;
     top: 140px;
-    border: 1px solid #454545;
 }
 
 .sandwich {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: center;
     width: 100%;
     height: 100%;
     cursor: pointer;
+    border: 1px solid #454545;
+    transition: all .5s linear;
 }
 
-.sandwich span {
+.sandwich div {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     width: 60%;
-    height: 1px;
+    height: 60%;
+    overflow: hidden;
+}
+
+.sandwich div span {
     background: #b4b4b4;
-    transition: transform 2s ease;
+    width: 100%;
+    height: 1px;
+    transition: all .5s linear;
 }
 
-.sandwich:hover span:nth-of-type(2n+1) {
-    transform: translateX(25px);
+.sandwich span:nth-of-type(2n + 1) {
+    width: 200%;
 }
 
-.sandwich:hover span:nth-of-type(2n) {
-    transform: translateX(-25px);
+.sandwich span:nth-of-type(1) {
+    transform-origin: bottom left;
+}
+
+.sandwich span:nth-of-type(3) {
+    transform-origin: top left;
+}
+
+.sandwich:hover{
+    border-color: #b69b67;
+}
+
+.sandwich:hover span {
+    background: #b69b67;
+}
+
+.sandwich.active span:nth-of-type(1) {
+    transform: rotate(44deg);
+}
+
+.sandwich.active span:nth-of-type(3) {
+    transform: rotate(-44deg);
+}
+
+.sandwich.active span:nth-of-type(2) {
+    opacity: 0;
 }
 
 @media screen and (min-width: 1200px) {
