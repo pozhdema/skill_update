@@ -1,20 +1,22 @@
 /*format props by priority*/
 #navigation {
-    display: flex;
-    flex-direction: column;
-    align-self: flex-end;
     position: absolute;
-    width: 50px;
-    height: 50px;
-    top: 140px;
-    border: 1px solid #454545;
-}
-
-#navigation:hover {
-    border-color: #b69b67;
+    width: 80%;
+    height: 450px;
+    top: 190px;
 }
 
 .sandwich {
+    position: absolute;
+    right: 0;
+    width: 60px;
+    height: 60px;
+    z-index: 1;
+    cursor: pointer;
+    border: 1px solid #454545;
+}
+
+.sandwich div {
     position: relative;
     display: flex;
     flex-direction: column;
@@ -22,11 +24,9 @@
     justify-content: space-evenly;
     width: 100%;
     height: 100%;
-    z-index: 1;
-    cursor: pointer;
 }
 
-.sandwich span {
+.sandwich div span {
     position: relative;
     width: 60%;
     height: 1px;
@@ -34,31 +34,34 @@
     /*transition: transform 2s ease;*/
 }
 
-.sandwich:hover span {
+.sandwich:hover {
+    border-color: #b69b67;
+}
+
+.sandwich:hover div span {
     background: #b69b67;
 }
 
-.sandwich.active span:nth-of-type(1) {
+#navigation.active .sandwich div span:nth-of-type(1) {
     width: 100%;
     transform: translate(9px, -5px) rotate(45deg);
     transform-origin: left top;
 }
 
-.sandwich.active span:nth-of-type(2) {
+#navigation.active .sandwich  div span:nth-of-type(2) {
     opacity: 0;
 }
 
-.sandwich.active span:nth-of-type(3) {
+#navigation.active .sandwich div span:nth-of-type(3) {
     width: 100%;
-    transform: translate(-9px, -38px) rotate(-45deg);
+    transform: translate(-9px, -35px) rotate(-45deg);
     transform-origin: right bottom;
 }
 
 #pull {
     position: absolute;
-    width: 70%;
-    height: 425px;
-    top: 200px;
+    width: 97%;
+    top: 30px;
     bottom: 0;
     background-color: #2C2C2C;
     background-image: url(../../images/menu.png);
@@ -71,7 +74,7 @@
     opacity: 0;
 }
 
-#pull.active {
+#navigation.active #pull{
     opacity: 1;
 }
 
@@ -149,7 +152,7 @@
     transform: translateX(-25px);
 }*/
 
-@media screen and (min-width: 1200px) {
+/*@media screen and (min-width: 1200px) {
     #navigation {
         width: 65px;
         height: 65px;
@@ -159,4 +162,4 @@
     .menu-name {
         font-size: 45px;
     }
-}
+}*/

@@ -1,7 +1,5 @@
-let pull=document.getElementById("pull");
 let sandwich=document.getElementsByClassName("sandwich")[0];
-
+let navigation=document.getElementById("navigation")
 sandwich.addEventListener("click", function (event) {
-    this.classList.toggle('active');
-    pull.classList.toggle('active');
+   navigation.classList.toggle('active');
 });
