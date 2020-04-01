@@ -72,6 +72,7 @@ option {
     background-size: cover;
     background-repeat: no-repeat;
     opacity: 0.75;
+    z-index: 99999;
 }
 
 .slider-item button {
