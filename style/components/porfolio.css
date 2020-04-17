@@ -33,7 +33,7 @@ option {
 .slider-wrap {
     position: relative;
     width: 100%;
-    height: 535px;;
+    height: 625px;;
     overflow: hidden;
 }
 
@@ -45,7 +45,7 @@ option {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 90%;
     opacity: 0;
     /*padding: 0 25px;*/
     transition: opacity 1s linear;
@@ -67,7 +67,8 @@ option {
     display: flex;
     flex-direction: column;
     width: 100%;
-    padding-top: 100%;
+    /*padding-top: 100%;*/
+    height: 300px;
     margin-bottom: 20px;
     background-size: cover;
     background-repeat: no-repeat;
@@ -181,6 +182,12 @@ option {
 
 .pagination span:nth-child(2n) {
     color: #b4b4b4;
+}
+
+@media screen and (min-width: 400px) {
+    .slide {
+        width: 100%;
+    }
 }
 
 @media screen and (min-width: 576px) {
